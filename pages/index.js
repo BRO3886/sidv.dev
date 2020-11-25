@@ -16,6 +16,7 @@ export default function Home() {
 			</Head>
 			<Nav />
 			<Landing />
+			<div style={{ height: "10vh" }}></div>
 		</div>
 	);
 }

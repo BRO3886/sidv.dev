@@ -10,7 +10,7 @@ const Landing = () => {
 	}, []);
 
 	return (
-		<div className="flex my-28 items-center justify-center">
+		<div className="flex items-center justify-center" style={{ height: "80vh" }}>
 			<div className="w-10/12 mx-auto flex flex-col md:flex-row-reverse items-center justify-between">
 				<div className="w-8/12 md:w-3/12 m-3">
 					<img
@@ -26,12 +26,11 @@ const Landing = () => {
 						} transform transition duration-1000 ease-in-out text-3xl md:text-5xl font-bold`}
 					>
 						{content.landing.text[0]}
-						<span className="text-blue">!</span>
 						<br />
-						{content.landing.text[1]}
+						{content.landing.text[1]} <span className="text-blue">{content.landing.text[2]}</span>
 					</h2>
 					<h1 className="text-grey text-xl">
-						{content.landing.text[2]}{" "}
+						{content.landing.text[3]}{" "}
 						<Typical
 							steps={content.landing.typical}
 							loop={Infinity}

@@ -3,11 +3,11 @@ export default {
 		logo: "SV",
 		links: [
 			{
-				text: "Projects",
+				text: "PROJECTS",
 				to: "/projects",
 			},
 			{
-				text: "Contact",
+				text: "CONTACT",
 				to: "/contact",
 			},
 		],
@@ -17,7 +17,7 @@ export default {
 			url: "/assets/me.jpg",
 			alt: "Siddhartha Varma",
 		},
-		text: ["Hi", "I'm Siddhartha.", "I'm a"],
+		text: ["Hi!", "I'm","Siddhartha.", "I'm a"],
 		typical: ["Fullstack Dev 🚀", 2000, "Designer ✍", 2000, "Netflix Addict 🍿", 2000],
 		btnText: "Get in Touch",
 	},
