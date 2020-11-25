@@ -1,0 +1,65 @@
+module.exports = {
+	future: {
+		removeDeprecatedGapUtilities: true,
+		purgeLayersByDefault: true,
+	},
+	purge: [],
+	darkMode: false, // or 'media' or 'class'
+	theme: {
+		fontFamily: {
+			sans: [
+				"system-ui",
+				"-apple-system",
+				"BlinkMacSystemFont",
+				'"Segoe UI"',
+				"Roboto",
+				'"Helvetica Neue"',
+				"Arial",
+				'"Noto Sans"',
+				"sans-serif",
+				'"Apple Color Emoji"',
+				'"Segoe UI Emoji"',
+				'"Segoe UI Symbol"',
+				'"Noto Color Emoji"',
+			],
+			serif: ["Georgia", "Cambria", '"Times New Roman"', "Times", "serif"],
+			mono: ["Menlo", "Monaco", "Consolas", '"Liberation Mono"', '"Courier New"', "monospace"],
+			cabin: ["Cabin"],
+		},
+		fontSize: {
+			xs: "0.75rem",
+			sm: "0.875rem",
+			base: "1rem",
+			lg: "1.125rem",
+			xl: "1.25rem",
+			"2xl": "1.5rem",
+			"3xl": "1.875rem",
+			"4xl": "2.25rem",
+			"5xl": "3rem",
+			"6xl": "4rem",
+		},
+		fontWeight: {
+			hairline: "100",
+			thin: "200",
+			light: "300",
+			normal: "400",
+			medium: "500",
+			semibold: "600",
+			bold: "700",
+			extrabold: "800",
+			black: "900",
+		},
+		extend: {
+			colors: {
+				blue: "#2B8BFC",
+				lightblue: "#D3E7FF",
+				black: "#000000",
+				grey: "#C4C4C4",
+			},
+		},
+	},
+	variants: {
+		extend: {},
+	},
+	plugins: [],
+};
