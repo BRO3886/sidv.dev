@@ -10,7 +10,8 @@ export default function Home() {
 				<link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
 				<meta name="viewport" content="initial-scale=1.0, width=device-width" />
 				<meta name="theme-color" content="#ffffff" />
-				<meta name="description" content="Developer. Designer. Technology Enthusiast" />
+				<meta property="og:image" content="/asset/me.jpg"></meta>
+				<meta name="description" content="Developer. Designer. Technology Enthusiast." />
 				<title>Siddhartha Varma</title>
 			</Head>
 			<Nav />
