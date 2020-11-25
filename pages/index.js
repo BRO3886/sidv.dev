@@ -2,6 +2,7 @@ import Head from "next/head";
 import Landing from "../components/Landing";
 import Nav from "../components/Nav";
 
+
 export default function Home() {
 	return (
 		<div className="">
@@ -14,7 +15,7 @@ export default function Home() {
 				<meta name="description" content="Developer. Designer. Technology Enthusiast." />
 				<title>Siddhartha Varma</title>
 			</Head>
-			<Nav />
+			<Nav props="home" />
 			<Landing />
 			<div style={{ height: "10vh" }}></div>
 		</div>

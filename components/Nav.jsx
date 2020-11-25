@@ -1,6 +1,7 @@
 import React from "react";
+import Link from "next/link";
 import content from "../content/content";
-const Nav = () => {
+const Nav = (props) => {
 	return (
 		<div className="text-black">
 			<div className="flex justify-between w-11/12 mx-auto py-3 items-center">
@@ -13,9 +14,15 @@ const Nav = () => {
 				<div>
 					{content.nav.links.map((link, index) => {
 						return (
-							<a href={link.to} key={index} className="text-base font-medium hover:text-blue ml-4">
-								{link.text}
-							</a>
+							<Link href={link.to} key={index}>
+								<a
+									className={`
+									${props.name === link.to.replace("/", "") ? "text-blue" : ""}
+									text-sm font-medium hover:text-blue ml-4`}
+								>
+									{link.text}
+								</a>
+							</Link>
 						);
 					})}
 				</div>
