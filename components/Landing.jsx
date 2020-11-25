@@ -10,10 +10,14 @@ const Landing = () => {
 	}, []);
 
 	return (
-		<div className="flex mt-20 items-center justify-center">
+		<div className="flex my-28 items-center justify-center">
 			<div className="w-10/12 mx-auto flex flex-col md:flex-row-reverse items-center justify-between">
-				<div className="w-8/12 md:w-4/12 m-3">
-					<img className="rounded-full" src={content.landing.img.url} alt={content.landing.img.alt}></img>
+				<div className="w-8/12 md:w-3/12 m-3">
+					<img
+						className="rounded-full"
+						src={content.landing.img.url}
+						alt={content.landing.img.alt}
+					></img>
 				</div>
 				<div className="text-black text-center md:text-left">
 					<h2
@@ -22,12 +26,12 @@ const Landing = () => {
 						} transform transition duration-1000 ease-in-out text-3xl md:text-5xl font-bold`}
 					>
 						{content.landing.text[0]}
+						<span className="text-blue">!</span>
 						<br />
 						{content.landing.text[1]}
 					</h2>
 					<h1 className="text-grey text-xl">
-						{content.landing.text[2]}
-						{" "}
+						{content.landing.text[2]}{" "}
 						<Typical
 							steps={content.landing.typical}
 							loop={Infinity}

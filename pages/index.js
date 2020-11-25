@@ -6,7 +6,7 @@ export default function Home() {
 	return (
 		<div className="">
 			<Head>
-				<meta charset="utf-8" />
+				<meta charSet="utf-8" />
 				<link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
 				<meta name="viewport" content="initial-scale=1.0, width=device-width" />
 				<meta name="theme-color" content="#ffffff" />
