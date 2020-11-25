@@ -25,7 +25,7 @@ const Landing = () => {
 						<br />
 						{content.landing.text[1]}
 					</h2>
-					<h1 className="text-grey">
+					<h1 className="text-grey text-xl">
 						{content.landing.text[2]}
 						{" "}
 						<Typical
@@ -34,8 +34,8 @@ const Landing = () => {
 							className="inline-block text-grey"
 						/>
 					</h1>
-					<button className="bg-lightblue px-10 py-3 mt-10 rounded-lg text-blue capitalize">
-						{content.landing.btnText}
+					<button className="bg-lightblue px-10 py-3 mt-10 rounded-lg text-blue font-medium capitalize hover:bg-blue hover:text-white  border border-transparent">
+						{content.landing.btnText.toUpperCase()}
 					</button>
 				</div>
 			</div>
