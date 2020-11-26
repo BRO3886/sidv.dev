@@ -1,7 +1,7 @@
 import Head from "next/head";
+import About from "../components/About";
 import Landing from "../components/Landing";
 import Nav from "../components/Nav";
-
 
 export default function Home() {
 	return (
@@ -17,6 +17,12 @@ export default function Home() {
 			</Head>
 			<Nav props="home" />
 			<Landing />
+			<div style={{ height: "10vh" }}></div>
+			<h2 className="w-10/12 mx-auto text-2xl md:text-4xl font-bold md:mt-10">
+				About <span className="text-blue">Me</span>
+			</h2>
+			<br />
+			<About />
 			<div style={{ height: "10vh" }}></div>
 		</div>
 	);
