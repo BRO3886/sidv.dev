@@ -14,14 +14,14 @@ const Contact = () => {
 					Get in <span className="text-blue">Touch</span>
 				</h2>
 				<br />
-				<div className="text-grey md:mb-4">{"PRIMARY"}</div>
+				<div className="text-darkgrey font-semibold md:mb-4">{"PRIMARY"}</div>
 				<div className="space-x-6">
 					{content.contact.primary.map((item, index) => {
 						return <ContactLink key={index} data={item} />;
 					})}
 				</div>
 				<br />
-				<div className="text-grey md:mb-4">{"SOCIAL"}</div>
+				<div className="text-darkgrey font-semibold md:mb-4">{"SOCIAL"}</div>
 				<div className="space-x-6">
 					{content.contact.social.map((item, index) => {
 						return <ContactLink key={index} data={item} />;

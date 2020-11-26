@@ -3,7 +3,7 @@ import Link from "next/link";
 import content from "../content/content";
 const Nav = (props) => {
 	return (
-		<div className="text-black">
+		<div className="text-darkgrey">
 			<div className="flex justify-between w-11/12 mx-auto py-3 items-center">
 				<a href="/">
 					<h1 className="text-3xl font-bold text-black">
