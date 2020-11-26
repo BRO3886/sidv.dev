@@ -1,20 +1,12 @@
-import Head from "next/head";
 import About from "../components/About";
+import Header from "../components/Header";
 import Landing from "../components/Landing";
 import Nav from "../components/Nav";
 
 export default function Home() {
 	return (
 		<div className="">
-			<Head>
-				<meta charSet="utf-8" />
-				<link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-				<meta name="viewport" content="initial-scale=1.0, width=device-width" />
-				<meta name="theme-color" content="#ffffff" />
-				<meta property="og:image" content="/assets/me.jpg"></meta>
-				<meta name="description" content="Developer. Designer. Technology Enthusiast." />
-				<title>Siddhartha Varma</title>
-			</Head>
+			<Header />
 			<Nav props="home" />
 			<Landing />
 			<div style={{ height: "10vh" }}></div>

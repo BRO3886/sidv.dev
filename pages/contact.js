@@ -1,21 +1,13 @@
-import Head from "next/head";
 import React from "react";
 import ContactLink from "../components/ContactLink";
+import Header from "../components/Header";
 import Nav from "../components/Nav";
 import content from "../content/content";
 
 const Contact = () => {
 	return (
 		<div>
-			<Head>
-				<meta charSet="utf-8" />
-				<link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-				<meta name="viewport" content="initial-scale=1.0, width=device-width" />
-				<meta name="theme-color" content="#ffffff" />
-				<meta property="og:image" content="/assets/me.jpg"></meta>
-				<meta name="description" content="Developer. Designer. Technology Enthusiast." />
-				<title>Siddhartha Varma</title>
-			</Head>
+			<Header />
 			<Nav name="contact" />
 			<div className="w-10/12 mx-auto flex flex-col">
 				<h2 className="text-2xl md:text-5xl font-bold md:mt-10">

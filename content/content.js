@@ -14,7 +14,7 @@ export default {
 	},
 	landing: {
 		img: {
-			url: "/assets/me.jpg",
+			url: "/assets/me.webp`",
 			alt: "Siddhartha Varma",
 		},
 		text: ["Hi!", "I'm", "Siddhartha.", "I'm a"],
