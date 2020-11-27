@@ -35,9 +35,43 @@ export default {
 		"",
 		"I’m a technology enthusiast, with a focus on creating minimal and beautiful UIs which are performant.",
 		"",
-		"I love making beautiful UIs with Flutter and React, and robust backends with Golang and Django.",
+		"I love making smooth apps with Flutter and React, and robust backends with Go and Django.",
 		"",
 		"I also have a keen interest in design.",
+	],
+	techstack: [
+		{
+			img: "/assets/stack/flutter.svg",
+			name: "Flutter",
+		},
+		{
+			img: "/assets/stack/kotlin.svg",
+			name: "Kotlin",
+		},
+		{
+			img: "/assets/stack/react.svg",
+			name: "React",
+		},
+		{
+			img: "/assets/stack/nextjs.svg",
+			name: "Next JS",
+		},
+		{
+			img: "/assets/stack/go.svg",
+			name: "Go",
+		},
+		{
+			img: "/assets/stack/nodejs.svg",
+			name: "Node",
+		},
+		{
+			img: "/assets/stack/fastapi.svg",
+			name: "FastAPI",
+		},
+		{
+			img: "/assets/stack/python.svg",
+			name: "Python",
+		},
 	],
 	contact: {
 		heading: ["Get in ", "Touch"],

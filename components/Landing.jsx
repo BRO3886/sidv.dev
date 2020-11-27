@@ -48,7 +48,7 @@ const Landing = () => {
 						<button
 							className={`${
 								animated ? "" : "translate-y-10 opacity-0"
-							} transform transition duration-900 bg-lightblue px-10 py-3 mt-10 rounded-lg text-blue font-medium capitalize hover:bg-blue hover:text-white  border border-transparent`}
+							} transform transition duration-900 bg-lightblue px-10 py-3 md:px-24 mt-10 rounded-lg text-blue font-medium capitalize hover:bg-blue hover:text-white  border border-transparent`}
 						>
 							{content.landing.btnText.toUpperCase()}
 						</button>
