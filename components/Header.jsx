@@ -7,7 +7,7 @@ const Header = () => {
 			<meta charSet="utf-8" />
 			<meta name="viewport" content="initial-scale=1.0, width=device-width" />
 			<meta name="theme-color" content="#ffffff" />
-			<meta property="og:image" content="/assets/me.jpg"></meta>
+			<meta property="og:image" content="/assets/me.webp"></meta>
 			<meta name="description" content="Developer. Designer. Technology Enthusiast." />
 			<link rel="icon" href="/favicon.ico" />
 			<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"></link>
