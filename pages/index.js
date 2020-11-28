@@ -1,4 +1,5 @@
 import About from "../components/About";
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Landing from "../components/Landing";
 import Nav from "../components/Nav";
@@ -23,6 +24,7 @@ export default function Home() {
 			<br />
 			<TechStack />
 			<div style={{ height: "10vh" }}></div>
+			<Footer/>
 		</div>
 	);
 }
