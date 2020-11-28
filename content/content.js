@@ -49,28 +49,32 @@ export default {
 			name: "Kotlin",
 		},
 		{
-			img: "/assets/stack/react.svg",
-			name: "React",
-		},
-		{
-			img: "/assets/stack/nextjs.svg",
-			name: "Next JS",
-		},
-		{
 			img: "/assets/stack/go.svg",
 			name: "Go",
 		},
-		{
-			img: "/assets/stack/nodejs.svg",
-			name: "Node",
-		},
-		{
+			{
 			img: "/assets/stack/fastapi.svg",
 			name: "FastAPI",
 		},
 		{
 			img: "/assets/stack/python.svg",
 			name: "Python",
+		},
+		{
+			img: "/assets/stack/react.svg",
+			name: "React",
+		},
+		{
+			img: "/assets/stack/vue.svg",
+			name: "Vue",
+		},
+		{
+			img: "/assets/stack/nextjs.svg",
+			name: "Next JS",
+		},
+		{
+			img: "/assets/stack/nodejs.svg",
+			name: "Node",
 		},
 	],
 	contact: {
