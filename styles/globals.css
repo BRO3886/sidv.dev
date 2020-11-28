@@ -19,20 +19,25 @@ a {
 	text-decoration: none;
 }
 
+nav {
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+}
+
 ::-webkit-scrollbar {
 	width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #fff	;
+	background: #fff;
 }
 
 ::-webkit-scrollbar-thumb {
-	background: #C4C4C4;
+	background: #c4c4c4;
 	border: 2px solid white;
 	border-radius: 8px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #a5a5a5;
+	background: #a5a5a5;
 }
