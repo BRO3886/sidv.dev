@@ -7,7 +7,7 @@ const Footer = () => {
 				© {new Date().getFullYear()} | Siddhartha Varma
 				<div>
 					<a href="https://github.com/BRO3886/siddharthavarma.tech">
-						<img src="/assets/Github.svg" alt="github" className="h-5" />
+						<img src="/assets/contact/Github.svg" alt="github" className="h-5" />
 					</a>
 				</div>
 			</div>

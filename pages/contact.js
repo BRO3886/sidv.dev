@@ -3,6 +3,7 @@ import Link from "next/link";
 import ContactLink from "../components/ContactLink";
 import Header from "../components/Header";
 import Nav from "../components/Nav";
+import Footer from "../components/Footer";
 import content from "../content/content";
 
 const Contact = () => {
@@ -28,12 +29,15 @@ const Contact = () => {
 						return <ContactLink key={index} data={item} />;
 					})}
 				</div>
-				{/* <div className="absolute inset-x-50 bottom-0 mb-4 md:mb-6">
-					<button className="bg-lightblue px-5 md:px-10 py-2 md:py-3 mt-20 rounded-lg md:text-lg text-sm text-blue font-medium capitalize hover:bg-blue hover:text-white  border border-transparent">
-						{"DOWNLOAD RESUME"}
-					</button>
-				</div> */}
+				<div>
+					<a href={content.resume.file} download>
+						<button className="bg-lightblue px-16 md:px-20 py-2 md:py-3 mt-20 rounded-lg md:text-lg text-sm text-blue font-medium capitalize hover:bg-blue hover:text-white  border border-transparent">
+							{content.resume.btn}
+						</button>
+					</a>
+				</div>
 			</div>
+			<Footer />
 		</div>
 	);
 };

@@ -52,7 +52,7 @@ export default {
 			img: "/assets/stack/go.svg",
 			name: "Go",
 		},
-			{
+		{
 			img: "/assets/stack/fastapi.svg",
 			name: "FastAPI",
 		},
@@ -81,37 +81,41 @@ export default {
 		heading: ["Get in ", "Touch"],
 		primary: [
 			{
-				img: "/assets/Phone.svg",
+				img: "/assets/contact/Phone.svg",
 				link: "tel:+918860986398",
 				name: "Phone",
 			},
 			{
-				img: "/assets/email.svg",
+				img: "/assets/contact/email.svg",
 				link: "mailto:siddverma1999@gmail.com",
 				name: "Mail",
 			},
 		],
 		social: [
 			{
-				img: "/assets/Github.svg",
+				img: "/assets/contact/Github.svg",
 				link: "https://github.com/BRO3886",
 				name: "GitHub",
 			},
 			{
-				img: "/assets/Instagram.svg",
+				img: "/assets/contact/Instagram.svg",
 				link: "https://instagram.com/sidv_22",
 				name: "Instagram",
 			},
 			{
-				img: "/assets/Twitter.svg",
+				img: "/assets/contact/Twitter.svg",
 				link: "https://twitter.com/sidv_22",
 				name: "Twitter",
 			},
 			{
-				img: "/assets/LinkedIN.svg",
+				img: "/assets/contact/LinkedIN.svg",
 				link: "https://linkedin.com/in/siddharthav22/",
 				name: "LinkedIN",
 			},
 		],
+	},
+	resume: {
+		file: "/assets/resume/Resume-Siddhartha-Varma.pdf",
+		btn: "DOWNLOAD RESUME",
 	},
 };
