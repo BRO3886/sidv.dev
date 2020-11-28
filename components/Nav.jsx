@@ -3,8 +3,8 @@ import Link from "next/link";
 import content from "../content/content";
 const Nav = (props) => {
 	return (
-		<div className="text-darkgrey">
-			<div className="flex justify-between w-11/12 mx-auto py-3 items-center">
+		<nav className="text-darkgrey top-0 fixed w-screen bg-white">
+			<div className="flex justify-between w-11/12 mx-auto mb-1 items-center">
 				<a href="/">
 					<h1 className="text-3xl font-bold text-black">
 						{content.nav.logo}
@@ -27,7 +27,7 @@ const Nav = (props) => {
 					})}
 				</div>
 			</div>
-		</div>
+		</nav>
 	);
 };
 
