@@ -1,5 +1,5 @@
 import React from "react";
-import content from "../content/content";
+import content from "../lib/content";
 
 const TechStack = () => {
 	return (

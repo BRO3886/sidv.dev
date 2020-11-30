@@ -3,7 +3,7 @@ import Nav from "../components/Nav";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import ProjectCard from "../components/ProjectCard";
-import content from "../content/content";
+import content from "../lib/content";
 
 const projects = () => {
 	return (

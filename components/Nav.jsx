@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import content from "../content/content";
+import content from "../lib/content";
 const Nav = (props) => {
 	return (
 		<nav className="text-darkgrey top-0 fixed w-screen bg-white bg-opacity-70 z-10">

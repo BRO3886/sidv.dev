@@ -4,7 +4,7 @@ import ContactLink from "../components/ContactLink";
 import Header from "../components/Header";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
-import content from "../content/content";
+import content from "../lib/content";
 
 const Contact = () => {
 	return (
