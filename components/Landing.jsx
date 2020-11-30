@@ -2,17 +2,18 @@ import { React, useEffect, useState } from "react";
 import Link from "next/link";
 import content from "../content/content";
 import Typical from "react-typical";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Landing = () => {
 	return (
 		<div className="flex items-center justify-center h-screen">
 			<div className="w-10/12 mx-auto flex flex-col md:flex-row-reverse items-center justify-between">
 				<div className="w-8/12 md:w-3/12 m-3">
-					<img
+					<LazyLoadImage
 						className="rounded-full"
 						src={content.landing.img.url}
 						alt={content.landing.img.alt}
-					></img>
+					/>
 				</div>
 				<div className="text-black text-center md:text-left">
 					<h2 className="text-3xl md:text-5xl font-bold">

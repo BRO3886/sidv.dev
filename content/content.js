@@ -118,4 +118,42 @@ export default {
 		file: "/assets/resume/Resume-Siddhartha-Varma.pdf",
 		btn: "DOWNLOAD RESUME",
 	},
+	projects: [
+		{
+			title: "Google Tasks CLI",
+			subtitle: "Manage your Google Tasks right from your terminal.",
+			img: "https://asciinema.org/a/372759.svg",
+			redirect: "https://asciinema.org/a/372759",
+			github: "https://github.com/BRO3886/google-tasks-cli",
+		},
+		{
+			title: "Medium RSS API",
+			subtitle: "A simple webservice to get JSON feed from Medium RSS Feed.",
+			img: "assets/projects/medium-api.png",
+			redirect: "https://medium-rss-api.herokuapp.com/docs",
+			github: "https://github.com/BRO3886/Medium-API",
+		},
+		{
+			title: "Akina",
+			subtitle: "Our contribution towards fighting the Covid-19 pandemic",
+			img: "assets/projects/akina.png",
+			redirect: "https://youtu.be/rLHDL1hEmBw",
+			github: "https://github.com/BRO3886/Project-Hestia",
+		},
+		{
+			title: "Gin Template",
+			subtitle: "A fully dockerised template repo for kickstarting Gin REST APIs",
+			img: "assets/projects/gin-template.png",
+			redirect: "https://github.com/BRO3886/gin-template",
+			github: "https://github.com/BRO3886/gin-template",
+		},
+		{
+			title: "QwickScan",
+			subtitle: "An app for making queues simpler during a pandemic.",
+			img: "assets/projects/qwickscan.png",
+			redirect: "https://youtu.be/CCXDGFrspcs",
+			github: "https://github.com/BRO3886/Apptitude-QwickScan",
+		},
+
+	],
 };
