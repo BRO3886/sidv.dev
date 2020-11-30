@@ -32,7 +32,7 @@ const Landing = () => {
 						/>
 					</h1>
 					<Link href="/contact">
-						<button className="bg-lightblue px-10 py-3 md:px-24 mt-10 rounded-lg text-blue font-medium capitalize hover:bg-blue hover:text-white  border border-transparent">
+						<button className="bg-lightblue px-10 py-3 md:px-24 mt-10 rounded-lg text-blue font-medium capitalize hover:bg-blue hover:text-white transition-colors duration-400 border border-transparent">
 							{content.landing.btnText.toUpperCase()}
 						</button>
 					</Link>

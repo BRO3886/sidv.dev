@@ -31,7 +31,7 @@ const Contact = () => {
 				</div>
 				<div>
 					<a href={content.resume.file} download>
-						<button className="bg-lightblue px-16 md:px-20 py-2 md:py-3 mt-20 rounded-lg md:text-lg text-sm text-blue font-medium capitalize hover:bg-blue hover:text-white  border border-transparent">
+						<button className="bg-lightblue px-16 md:px-20 py-2 md:py-3 mt-20 rounded-lg md:text-lg text-sm text-blue font-medium capitalize hover:bg-blue hover:text-white transition-colors duration-400  border border-transparent">
 							{content.resume.btn}
 						</button>
 					</a>
