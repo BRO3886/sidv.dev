@@ -1,5 +1,6 @@
 import React from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const ProjectCard = (props) => {
 	return (
@@ -9,6 +10,7 @@ const ProjectCard = (props) => {
 				<p className="text-darkgrey py-1">{props.project.subtitle}</p>
 				<a href={props.project.redirect}>
 					<LazyLoadImage
+						effect="blur"
 						src={props.project.img}
 						alt={props.project.title}
 						className="my-2 rounded-md"

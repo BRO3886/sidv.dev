@@ -3,6 +3,7 @@ import Link from "next/link";
 import content from "../content/content";
 import Typical from "react-typical";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const Landing = () => {
 	return (
@@ -11,6 +12,7 @@ const Landing = () => {
 				<div className="w-8/12 md:w-3/12 m-3">
 					<LazyLoadImage
 						className="rounded-full"
+						effect="blur"
 						src={content.landing.img.url}
 						alt={content.landing.img.alt}
 					/>
