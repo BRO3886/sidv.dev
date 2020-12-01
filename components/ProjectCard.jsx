@@ -4,25 +4,26 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 
 const ProjectCard = (props) => {
 	return (
-		<a href={props.project.github}>
-			<div className="bg-white rounded-xl p-4 transition-shadow duration-400 hover:shadow-xl border-opacity-100 border hover:border-transparent">
-				<h1 className="text-lg md:text-xl lg:text-2xl font-bold">{props.project.title}</h1>
-				<p className="text-darkgrey py-1">{props.project.subtitle}</p>
-				<a href={props.project.redirect}>
-					<LazyLoadImage
-						effect="blur"
-						src={props.project.img}
-						alt={props.project.title}
-						className="my-2 rounded-md"
-					/>
+		<div className="bg-white rounded-xl p-4 transition-shadow duration-400 hover:shadow-xl border-opacity-100 border hover:border-transparent">
+			<h1 className="text-lg md:text-xl lg:text-2xl font-bold">{props.project.title}</h1>
+			<p className="text-darkgrey py-1">{props.project.subtitle}</p>
+			<a href={props.project.redirect}>
+				<LazyLoadImage
+					effect="blur"
+					src={props.project.img}
+					alt={props.project.title}
+					className="my-2 rounded-md"
+				/>
+			</a>
+			<div className="flex justify-end">
+				<a href={props.project.github} className="text-sm text-blue mr-4">
+					<img src="assets/contact/Github.svg" className="h-6 md:h-8"></img>
 				</a>
-				<div className="flex justify-between">
-					<a href={props.project.github}>
-						<img src="assets/contact/Github.svg" className="h-6 md:h-8"></img>
-					</a>
-				</div>
+				<a href={props.project.link} className="text-sm text-blue">
+					<img src="assets/projects/link.svg" className="h-6 md:h-8"></img>
+				</a>
 			</div>
-		</a>
+		</div>
 	);
 };
 
