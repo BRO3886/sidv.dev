@@ -16,7 +16,7 @@ const projects = () => {
 				</h2>
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
 					{content.projects.map((project, index) => {
-						return <ProjectCard project={project} key={index}/>;
+						return <ProjectCard  i={index} project={project} key={index}/>;
 					})}
 				</div>
 			</div>

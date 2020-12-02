@@ -1,8 +1,9 @@
-import { React, useEffect, useState } from "react";
+import React from "react";
 import Link from "next/link";
-import content from "../lib/content";
 import Typical from "react-typical";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { motion } from "framer-motion";
+import content from "../lib/content";
 import "react-lazy-load-image-component/src/effects/blur.css";
 
 const Landing = () => {
@@ -32,9 +33,13 @@ const Landing = () => {
 						/>
 					</h1>
 					<Link href="/contact">
-						<button className="bg-lightblue px-10 py-3 md:px-24 mt-10 rounded-lg text-blue font-medium capitalize hover:bg-blue hover:text-white transition-colors duration-400 border border-transparent">
+						<motion.button
+							whileHover={{ backgroundColor: "#2B8BFC", color: "#FFFFFF" }}
+							whileTap={{ scale: 0.95 }}
+							className="bg-lightblue px-10 py-3 md:px-24 mt-10 rounded-lg text-blue font-medium capitalize focus:outline-none"
+						>
 							{content.landing.btnText.toUpperCase()}
-						</button>
+						</motion.button>
 					</Link>
 				</div>
 			</div>
