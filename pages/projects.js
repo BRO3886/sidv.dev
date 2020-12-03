@@ -11,7 +11,7 @@ const projects = () => {
 			<Header />
 			<Nav name="projects" />
 			<div className="w-10/12 mt-20  md:mt-32 mx-auto flex flex-col">
-				<h2 className="text-2xl md:text-5xl font-bold my-1">
+				<h2 className="text-2xl md:text-5xl font-bold my-2">
 					My <span className="text-blue">Projects</span>
 				</h2>
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">

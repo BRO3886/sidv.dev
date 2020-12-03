@@ -35,7 +35,7 @@ const Landing = () => {
 					<Link href="/contact">
 						<motion.button
 							whileHover={{ backgroundColor: "#2B8BFC", color: "#FFFFFF" }}
-							whileTap={{ scale: 0.95 }}
+							whileTap={{ scale: 0.95, backgroundColor: "#2B8BFC", color: "#FFFFFF" }}
 							className="bg-lightblue px-10 py-3 md:px-24 mt-10 rounded-lg text-blue font-medium capitalize focus:outline-none"
 						>
 							{content.landing.btnText.toUpperCase()}

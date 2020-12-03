@@ -34,7 +34,7 @@ const Contact = () => {
 					<a href={content.resume.file} download>
 						<motion.button
 							whileHover={{ backgroundColor: "#2B8BFC", color: "#FFFFFF" }}
-							whileTap={{ scale: 0.95 }}
+							whileTap={{ scale: 0.95, backgroundColor: "#2B8BFC", color: "#FFFFFF" }}
 							className="bg-lightblue px-16 md:px-20 py-2 md:py-3 mt-20 rounded-lg md:text-lg text-sm text-blue font-medium capitalize focus:outline-none"
 						>
 							{content.resume.btn}
