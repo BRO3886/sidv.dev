@@ -7,12 +7,12 @@ import TechStack from "../components/TechStack";
 
 export default function Home() {
 	return (
-		<div className="">
+		<div className="dark:bg-black">
 			<Header />
 			<Nav props="home" />
 			<Landing />
-			<div style={{ height: "10vh" }}></div>
-			<h2 className="w-10/12 mx-auto text-2xl md:text-4xl font-bold md:mt-10">
+			<div className="dark:bg-black" style={{ height: "10vh" }}></div>
+			<h2 className="w-10/12 mx-auto text-2xl md:text-4xl font-bold md:mt-10 dark:text-white">
 				About <span className="text-blue">Me</span>
 			</h2>
 			<br />

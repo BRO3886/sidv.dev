@@ -11,7 +11,7 @@ const TechStack = () => {
 						<motion.div whileHover={{ scale: 1.1 }} key={index} className="m-auto">
 							<span className="bg-white shadow-lg m-2 rounded-full">
 								<img className="h-18 md:h-24" src={tech.img} alt={tech.name} />
-								<h4 className="mt-1 text-sm text-darkgrey">{tech.name}</h4>
+								<h4 className="mt-1 text-sm text-darkgrey dark:text-grey">{tech.name}</h4>
 							</span>
 						</motion.div>
 					);

@@ -3,10 +3,10 @@ import Link from "next/link";
 import content from "../lib/content";
 const Nav = (props) => {
 	return (
-		<nav className="text-darkgrey top-0 fixed w-screen bg-white bg-opacity-70 z-10">
+		<nav className="text-darkgrey top-0 fixed w-screen bg-white bg-opacity-70 z-10 border-b-0 border-gray-400 dark:bg-black dark:text-white">
 			<div className="flex justify-between w-11/12 mx-auto mb-1 items-center">
 				<a href="/">
-					<h1 className="text-3xl font-bold text-black">
+					<h1 className="text-3xl font-bold text-black dark:text-white">
 						{content.nav.logo}
 						<span className="rounded-full bg-blue h-2 w-2 inline-block"></span>
 					</h1>
@@ -32,3 +32,4 @@ const Nav = (props) => {
 };
 
 export default Nav;
+// border-bottom: 1px solid #e9e9e9;

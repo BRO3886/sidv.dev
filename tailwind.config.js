@@ -4,7 +4,7 @@ module.exports = {
 		purgeLayersByDefault: true,
 	},
 	purge: ["./components/**/*.{js,ts,jsx,tsx}", "./pages/**/*.{js,ts,jsx,tsx}"],
-	darkMode: false, // or 'media' or 'class'
+	darkMode: "media", // or 'media' or 'class'
 	theme: {
 		fontFamily: {
 			cabin: ["Cabin"],
@@ -58,6 +58,7 @@ module.exports = {
 				black: "#000000",
 				grey: "#C4C4C4",
 				darkgrey: "#6B6B6B",
+				darkergrey: "#2c2c2e",
 			},
 		},
 	},

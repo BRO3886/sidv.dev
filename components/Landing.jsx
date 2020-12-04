@@ -8,7 +8,7 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 
 const Landing = () => {
 	return (
-		<div className="flex items-center justify-center h-screen">
+		<div className="flex items-center justify-center h-screen dark:bg-black">
 			<div className="w-10/12 mx-auto flex flex-col md:flex-row-reverse items-center justify-between">
 				<div className="w-8/12 md:w-3/12 m-3">
 					<LazyLoadImage
@@ -18,7 +18,7 @@ const Landing = () => {
 						alt={content.landing.img.alt}
 					/>
 				</div>
-				<div className="text-black text-center md:text-left">
+				<div className="text-black dark:text-white text-center md:text-left">
 					<h2 className="text-3xl md:text-5xl font-bold">
 						{content.landing.text[0]}
 						<br />
@@ -36,7 +36,7 @@ const Landing = () => {
 						<motion.button
 							whileHover={{ backgroundColor: "#2B8BFC", color: "#FFFFFF" }}
 							whileTap={{ scale: 0.95, backgroundColor: "#2B8BFC", color: "#FFFFFF" }}
-							className="bg-lightblue px-10 py-3 md:px-24 mt-10 rounded-lg text-blue font-medium capitalize focus:outline-none"
+							className="bg-lightblue dark:bg-blue px-10 py-3 md:px-24 mt-10 rounded-lg text-blue dark:text-white font-medium capitalize focus:outline-none"
 						>
 							{content.landing.btnText.toUpperCase()}
 						</motion.button>

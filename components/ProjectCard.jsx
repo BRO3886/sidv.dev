@@ -4,7 +4,7 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 
 const ProjectCard = (props) => {
 	return (
-		<div className="bg-white rounded-xl transition-shadow duration-400 hover:shadow-xl border-opacity-100 border hover:border-transparent">
+		<div className="bg-white dark:bg-darkergrey dark:border-transparent rounded-xl transition-shadow duration-400 hover:shadow-xl border-opacity-100 border hover:border-transparent">
 			<a href={props.project.redirect}>
 				<LazyLoadImage
 					effect="blur"
@@ -15,8 +15,8 @@ const ProjectCard = (props) => {
 			</a>
 			<div className="px-4">
 				<h1 className="text-lg md:text-xl lg:text-2xl font-bold">{props.project.title}</h1>
-				<p className="text-darkgrey pt-1 pb-2">{props.project.subtitle}</p>
-				<div className="flex justify-start pb-4">
+				<p className="text-darkgrey dark:text-grey pt-1 pb-2">{props.project.subtitle}</p>
+				<div className="flex justify-start pt-1 pb-4">
 					<a href={props.project.github} className="text-sm text-blue mr-4">
 						<img src="assets/contact/Github.svg" className="h-6 md:h-8"></img>
 					</a>
