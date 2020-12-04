@@ -5,12 +5,14 @@ const Nav = (props) => {
 	return (
 		<nav className="text-darkgrey top-0 fixed w-screen bg-white bg-opacity-70 z-10 border-b dark:border-darkergrey border-gray-200 dark:bg-black dark:text-white">
 			<div className="flex justify-between w-11/12 mx-auto mb-1 items-center">
-				<a href="/">
-					<h1 className="text-3xl font-bold text-black dark:text-white">
-						{content.nav.logo}
-						<span className="rounded-full bg-blue h-2 w-2 inline-block"></span>
-					</h1>
-				</a>
+				<Link href="/">
+					<a href="/">
+						<h1 className="text-3xl font-bold text-black dark:text-white">
+							{content.nav.logo}
+							<span className="rounded-full bg-blue h-2 w-2 inline-block"></span>
+						</h1>
+					</a>
+				</Link>
 				<div>
 					{content.nav.links.map((link, index) => {
 						return (
