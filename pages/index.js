@@ -30,7 +30,7 @@ export default function Home() {
 				<Link href="/projects" >
 					<a className="text-blue">projects</a>
 				</Link>{" or "}
-				<Link href="/projects">
+				<Link href="/contact">
 					<a className="text-blue">let's get in touch.</a>
 				</Link>
 			</div>
