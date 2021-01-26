@@ -1,4 +1,4 @@
-import React, {useContext} from "react";
+import React, { useContext } from "react";
 import Link from "next/link";
 import Typical from "react-typical";
 import { LazyLoadImage } from "react-lazy-load-image-component";
@@ -12,13 +12,20 @@ const Landing = () => {
 	return (
 		<div className="flex items-center justify-center h-screen dark:bg-black">
 			<div className="w-10/12 mx-auto flex flex-col md:flex-row-reverse items-center justify-between">
-				<div className="w-8/12 md:w-3/12 m-3" onClick={() => toggleDark()}>
-					<LazyLoadImage
-						className="rounded-full"
-						effect="blur"
-						src={content.landing.img.url}
-						alt={content.landing.img.alt}
-					/>
+				<div className="w-8/12 md:w-3/12 m-3">
+					<motion.button
+						onClick={() => toggleDark()}
+						className="focus:outline-none"
+						whileTap={{ scale: 0.98 }}
+						whileHover={{ scale: 1.04}}
+					>
+						<LazyLoadImage
+							className="rounded-full"
+							effect="blur"
+							src={content.landing.img.url}
+							alt={content.landing.img.alt}
+						/>
+					</motion.button>
 				</div>
 				<div className="text-black dark:text-white text-center md:text-left">
 					<h2 className="text-3xl md:text-5xl font-bold">
