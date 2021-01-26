@@ -1,16 +1,18 @@
-import React from "react";
+import React, {useContext} from "react";
 import Link from "next/link";
 import Typical from "react-typical";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { motion } from "framer-motion";
+import ThemeContext from "../theme/ThemeContext";
 import content from "../lib/content";
 import "react-lazy-load-image-component/src/effects/blur.css";
 
 const Landing = () => {
+	const { dark, toggleDark } = useContext(ThemeContext);
 	return (
 		<div className="flex items-center justify-center h-screen dark:bg-black">
 			<div className="w-10/12 mx-auto flex flex-col md:flex-row-reverse items-center justify-between">
-				<div className="w-8/12 md:w-3/12 m-3">
+				<div className="w-8/12 md:w-3/12 m-3" onClick={() => toggleDark()}>
 					<LazyLoadImage
 						className="rounded-full"
 						effect="blur"
