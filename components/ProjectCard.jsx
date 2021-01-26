@@ -1,18 +1,16 @@
 import React from "react";
-import Image from "next/image";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const ProjectCard = (props) => {
 	return (
 		<div className="bg-white dark:bg-darkergrey dark:border-transparent rounded-xl transition-shadow duration-400 hover:shadow-xl border-opacity-100 border hover:border-transparent m-1">
 			<a href={props.project.redirect}>
-				<Image
-					className="rounded-t-xl m-1"
-					layout="responsive"
-					width={400}
-					height={225}
-					minWidth={400}
-					src={"/" + props.project.img}
+				<LazyLoadImage
+					effect="blur"
+					src={props.project.img}
 					alt={props.project.title}
+					className="rounded-t-xl"
 				/>
 			</a>
 			<div className="px-4 py-1">
