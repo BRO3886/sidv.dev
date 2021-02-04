@@ -22,8 +22,8 @@ a {
 }
 
 nav {
-	backdrop-filter: blur(2em);
-	-webkit-backdrop-filter: blur(2em);
+	backdrop-filter: blur(1em);
+	-webkit-backdrop-filter: blur(1em);
 }
 
 ::-webkit-scrollbar {

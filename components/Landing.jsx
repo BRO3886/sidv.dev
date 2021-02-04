@@ -1,11 +1,9 @@
 import React, { useContext } from "react";
 import Link from "next/link";
 import Typical from "react-typical";
-import { LazyLoadImage } from "react-lazy-load-image-component";
 import { motion } from "framer-motion";
 import ThemeContext from "../theme/ThemeContext";
 import content from "../lib/content";
-import "react-lazy-load-image-component/src/effects/blur.css";
 
 const Landing = () => {
 	const { dark, toggleDark } = useContext(ThemeContext);
@@ -17,9 +15,9 @@ const Landing = () => {
 						onClick={() => toggleDark()}
 						className="focus:outline-none"
 						whileTap={{ scale: 0.98 }}
-						whileHover={{ scale: 1.04}}
+						whileHover={{ scale: 1.04 }}
 					>
-						<LazyLoadImage
+						<img
 							className="rounded-full"
 							effect="blur"
 							src={content.landing.img.url}
