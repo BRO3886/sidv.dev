@@ -8,7 +8,7 @@ import TechStack from "../components/TechStack";
 
 export default function Home() {
 	return (
-		<div className="dark:bg-black dark:text-white">
+		<div className="dark:bg-black dark:text-white antialiased">
 			<Header />
 			<Nav props="home" />
 			<Landing />

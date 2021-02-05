@@ -21,10 +21,10 @@ a {
 	text-decoration: none;
 }
 
-nav {
+/* nav {
 	backdrop-filter: blur(1em);
 	-webkit-backdrop-filter: blur(1em);
-}
+} */
 
 ::-webkit-scrollbar {
 	width: 10px;
@@ -42,4 +42,8 @@ nav {
 
 ::-webkit-scrollbar-thumb:hover {
 	background: #a5a5a5;
+}
+
+#menu-toggle:checked + #menu {
+	display: block;
 }
