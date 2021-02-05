@@ -21,10 +21,10 @@ a {
 	text-decoration: none;
 }
 
-/* nav {
-	backdrop-filter: blur(1em);
-	-webkit-backdrop-filter: blur(1em);
-} */
+header {
+	backdrop-filter: blur(1rem);
+	-webkit-backdrop-filter: blur(1rem);
+}
 
 ::-webkit-scrollbar {
 	width: 10px;

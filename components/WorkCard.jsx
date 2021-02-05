@@ -4,7 +4,10 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 
 const WorkCard = (props) => {
 	return (
-		<motion.button className="text-left">
+		<motion.button
+			className="text-left focus: outline-none"
+			whileTap={{ scale: 0.96 }}
+		>
 			<a href={props.work.url}>
 				<div className="bg-white dark:bg-darkergrey dark:border-transparent rounded-xl border-opacity-100 border">
 					<div className="flex items-center">
