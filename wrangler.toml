@@ -7,8 +7,4 @@ entry-point = "workers-site"
 
 [env.production]
 name = "site-worker-production"
-route = "siddharthavarma.tech/*"
-
-[env.newproduction]
-name = "site-worker-newproduction"
 route = "sidv.dev/*"
