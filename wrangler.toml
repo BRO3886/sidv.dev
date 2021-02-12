@@ -6,5 +6,9 @@ bucket = "./out"
 entry-point = "workers-site"
 
 [env.production]
-name = "site-worker-production"
+name = "site-worker-siddharthavarma"
 route = "siddharthavarma.tech/*"
+
+[env.newproduction]
+name = "site-worker-sidv"
+route = "sidv.dev/*"
