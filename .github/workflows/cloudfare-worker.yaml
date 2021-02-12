@@ -17,7 +17,7 @@ jobs:
         with:
           node-version: 12.x
       - run: yarn install --frozen-lockfile
-      - run: yarn export
+      - run: yarn bs
 
       - name: Publish to Cloudflare Workers Sites
         run: |
