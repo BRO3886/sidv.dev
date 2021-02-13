@@ -6,5 +6,5 @@ bucket = "./out"
 entry-point = "workers-site"
 
 [env.production]
-name = "site-worker-production"
+name = "site-worker-sidv"
 route = "sidv.dev/*"
