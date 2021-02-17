@@ -1,10 +1,14 @@
 import { getAssetFromKV, mapRequestToAsset } from "@cloudflare/kv-asset-handler";
-import {redirect} from "./data.js"
 
 const GH_UNAME = "BRO3886";
 const GH_URL = `https://github.com/${GH_UNAME}"`;
 const PERMISSIONS_POLICY =
 	"accelerometer=(), autoplay=(), camera=(), encrypted-media=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), midi=(), payment=(), picture-in-picture=(), sync-xhr=(), usb=()";
+
+const redirect = {
+	old: "https://siddharthavarma.tech",
+	yt: "https://youtube.com",
+};
 
 export const handleRequest = async (event) => {
 	return performRedirect(event);
@@ -39,7 +43,6 @@ async function getPageFromKV(event) {
 }
 
 export const performRedirect = async (event) => {
-
 	const urlParts = event.request.url.replace(BASE_URL, "").split("/");
 	if (redirect[urlParts[0]]) {
 		return Response.redirect(redirect[urlParts[0]], 301);
