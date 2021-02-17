@@ -44,7 +44,7 @@ export const performRedirect = async (event) => {
 	if (redirect[urlParts[0]]) {
 		return Response.redirect(redirect[urlParts[0]], 301);
 	}
-	if (urlParts[0] === "gh") {
+	if (redirect[0] === "gh") {
 		switch (urlParts.length) {
 			case 1:
 				return Response.redirect(GH_URL, 301);
@@ -57,9 +57,4 @@ export const performRedirect = async (event) => {
 		}
 	}
 	return getPageFromKV(event);
-};
-
-const redirect = {
-	old: "https://siddharthavarma.tech",
-	yt: "https://youtube.com",
 };
