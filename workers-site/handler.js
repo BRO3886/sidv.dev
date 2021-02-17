@@ -1,5 +1,5 @@
 import { getAssetFromKV, mapRequestToAsset } from "@cloudflare/kv-asset-handler";
-import { redirect } from "./data";
+import {redirect} from "./data.js"
 
 const GH_UNAME = "BRO3886";
 const GH_URL = `https://github.com/${GH_UNAME}"`;
@@ -57,4 +57,9 @@ export const performRedirect = async (event) => {
 		}
 	}
 	return getPageFromKV(event);
+};
+
+const redirect = {
+	old: "https://siddharthavarma.tech",
+	yt: "https://youtube.com",
 };
