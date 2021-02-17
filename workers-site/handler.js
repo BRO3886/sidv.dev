@@ -15,15 +15,19 @@ export async function handleRequest(event) {
 }
 
 async function getPageFromKV(event) {
-	const options = {};
+	const options = {mapRequestToAsset: (req) => new Request(`${new URL(req.url)}.html`, req) };
 	try {
-		let page = await getAssetFromKV(event, {
-			mapRequestToAsset: (req) => new Request(`${new URL(req.url)}.html`, req),
-		});
+		const page = await getAssetFromKV(event, options);
 		if (page === null) {
 			throw new Error("No page found, short-circuit to 404 page");
 		}
-		return new Response(page.body, notFoundResponse);
+		const response = new Response(page.body, page);
+		response.headers.set("X-XSS-Protection", "1; mode=block");
+		response.headers.set("X-Content-Type-Options", "nosniff");
+		response.headers.set("X-Frame-Options", "DENY");
+		response.headers.set("Referrer-Policy", "no-referrer-when-downgrade");
+		response.headers.set("Permissions-Policy", PERMISSIONS_POLICY);
+		return response;
 	} catch (e) {
 		try {
 			const notFoundResponse = await getAssetFromKV(event, {
