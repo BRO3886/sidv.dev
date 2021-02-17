@@ -1,14 +1,8 @@
-import { getAssetFromKV, mapRequestToAsset } from "@cloudflare/kv-asset-handler";
+import { getAssetFromKV } from "@cloudflare/kv-asset-handler";
+import {redirect} from "./data.js"
 
 const GH_UNAME = "BRO3886";
 const GH_URL = `https://github.com/${GH_UNAME}`;
-const PERMISSIONS_POLICY =
-	"accelerometer=(), autoplay=(), camera=(), encrypted-media=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), midi=(), payment=(), picture-in-picture=(), sync-xhr=(), usb=()";
-
-const redirect = {
-	old: "https://siddharthavarma.tech",
-	yt: "https://youtube.com",
-};
 
 export async function handleRequest(event) {
 	return performRedirect(event);
