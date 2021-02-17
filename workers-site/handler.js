@@ -1,8 +1,7 @@
 import { getAssetFromKV } from "@cloudflare/kv-asset-handler";
 import {redirect} from "./data.js"
 
-const GH_UNAME = "BRO3886";
-const GH_URL = `https://github.com/${GH_UNAME}`;
+const GH_URL = `https://github.com/BR03886`;
 
 export async function handleRequest(event) {
 	return performRedirect(event);
