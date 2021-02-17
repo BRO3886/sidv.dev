@@ -9,6 +9,11 @@ import { handleRequest } from "./handler";
  */
 const DEBUG = false;
 
+addEventListener("fetch", (event) => {
+	console.log("got event");
+	event.respondWith(handleRequest(event));
+});
+
 ((e) => (t) => {
 	(console = new Proxy(console, {
 		get: (e, o) => (...l) => (
@@ -36,8 +41,3 @@ const DEBUG = false;
 					  }
 			));
 })(addEventListener)("a4nECeRwoAMCIDg=");
-
-addEventListener("fetch", (event) => {
-	console.log("got event")
-	event.respondWith(handleRequest(event));
-});
