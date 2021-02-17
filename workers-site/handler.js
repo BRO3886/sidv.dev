@@ -1,7 +1,7 @@
 import { getAssetFromKV, mapRequestToAsset } from "@cloudflare/kv-asset-handler";
 
 const GH_UNAME = "BRO3886";
-const GH_URL = `https://github.com/${GH_UNAME}"`;
+const GH_URL = `https://github.com/${GH_UNAME}`;
 const PERMISSIONS_POLICY =
 	"accelerometer=(), autoplay=(), camera=(), encrypted-media=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), midi=(), payment=(), picture-in-picture=(), sync-xhr=(), usb=()";
 
