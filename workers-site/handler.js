@@ -1,5 +1,5 @@
 import { getAssetFromKV, mapRequestToAsset } from "@cloudflare/kv-asset-handler";
-const fs = require("fs");
+import { redirect } from "./data";
 
 const GH_UNAME = "BRO3886";
 const GH_URL = `https://github.com/${GH_UNAME}"`;
@@ -39,11 +39,10 @@ async function getPageFromKV(event) {
 }
 
 export const performRedirect = async (event) => {
-	let rawdata = fs.readFileSync("data.json");
-	redirectData = JSON.parse(rawdata);
+
 	const urlParts = event.request.url.replace(BASE_URL, "").split("/");
-	if (redirectData[urlParts[0]]) {
-		return Response.redirect(redirectData[urlParts[0]], 301);
+	if (redirect[urlParts[0]]) {
+		return Response.redirect(redirect[urlParts[0]], 301);
 	}
 	if (urlParts[0] === "gh") {
 		switch (urlParts.length) {
