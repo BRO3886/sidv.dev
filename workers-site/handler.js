@@ -42,7 +42,7 @@ async function getPageFromKV(event) {
 	}
 }
 
-export const performRedirect = async (event) => {
+const performRedirect = async (event) => {
 	const urlParts = event.request.url.replace(BASE_URL, "").split("/");
 	if (redirect[urlParts[0]]) {
 		return Response.redirect(redirect[urlParts[0]], 301);
