@@ -17,17 +17,13 @@ export async function handleRequest(event) {
 async function getPageFromKV(event) {
 	const options = {};
 	try {
-		const page = await getAssetFromKV(event, options);
+		let page = await getAssetFromKV(event, {
+			mapRequestToAsset: (req) => new Request(`${new URL(req.url)}.html`, req),
+		});
 		if (page === null) {
 			throw new Error("No page found, short-circuit to 404 page");
 		}
-		const response = new Response(page.body, page);
-		response.headers.set("X-XSS-Protection", "1; mode=block");
-		response.headers.set("X-Content-Type-Options", "nosniff");
-		response.headers.set("X-Frame-Options", "DENY");
-		response.headers.set("Referrer-Policy", "no-referrer-when-downgrade");
-		response.headers.set("Permissions-Policy", PERMISSIONS_POLICY);
-		return response;
+		return new Response(page.body, notFoundResponse);
 	} catch (e) {
 		try {
 			const notFoundResponse = await getAssetFromKV(event, {
