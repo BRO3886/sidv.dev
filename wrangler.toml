@@ -1,3 +1,4 @@
+name = "site-worker"
 type = "webpack"
 workers_dev = false
 
@@ -8,3 +9,4 @@ entry-point = "workers-site"
 [env.production]
 name = "site-worker-production"
 route = "sidv.dev/*"
+vars = { BASE_URL = "https://sidv.dev" } 

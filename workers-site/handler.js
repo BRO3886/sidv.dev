@@ -11,12 +11,10 @@ const redirect = {
 };
 
 export async function handleRequest(event) {
-	console.log("perform redirect")
 	return performRedirect(event);
 }
 
 async function getPageFromKV(event) {
-	console.log("getting from kv")
 	const options = {};
 	try {
 		const page = await getAssetFromKV(event, options);
@@ -31,8 +29,6 @@ async function getPageFromKV(event) {
 		response.headers.set("Permissions-Policy", PERMISSIONS_POLICY);
 		return response;
 	} catch (e) {
-		console.log("error. trying 404")
-		console.error(e)
 		try {
 			const notFoundResponse = await getAssetFromKV(event, {
 				mapRequestToAsset: (req) => new Request(`${new URL(req.url).origin}/404.html`, req),
@@ -42,7 +38,7 @@ async function getPageFromKV(event) {
 				status: 404,
 			});
 		} catch (e) {}
-		console.log("after 404 error. server error returned.")
+
 		return new Response(e.message || e.toString(), { status: 500 });
 	}
 }
@@ -50,11 +46,9 @@ async function getPageFromKV(event) {
 async function performRedirect(event) {
 	const urlParts = event.request.url.replace(BASE_URL, "").split("/");
 	if (redirect[urlParts[0]]) {
-		console.log("page found in data")
 		return Response.redirect(redirect[urlParts[0]], 301);
 	}
 	if (redirect[0] === "gh") {
-		console.log("gh page")
 		switch (urlParts.length) {
 			case 1:
 				return Response.redirect(GH_URL, 301);
@@ -66,6 +60,5 @@ async function performRedirect(event) {
 				return Response.redirect(`${GH_URL}/${urlParts[1]}/issues/${urlParts[3]}`, 301);
 		}
 	}
-	console.log("not found")
 	return getPageFromKV(event);
 }
