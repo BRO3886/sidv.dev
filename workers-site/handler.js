@@ -15,28 +15,27 @@ export async function handleRequest(event) {
 }
 
 async function getPageFromKV(event) {
-	const options = {mapRequestToAsset: (req) => new Request(`${new URL(req.url)}.html`, req) };
+	const url = new URL(event.request.url);
+	let options = {};
 	try {
-		const page = await getAssetFromKV(event, options);
-		const response = new Response(page.body, page);
-		response.headers.set("X-XSS-Protection", "1; mode=block");
-		response.headers.set("X-Content-Type-Options", "nosniff");
-		response.headers.set("X-Frame-Options", "DENY");
-		response.headers.set("Referrer-Policy", "no-referrer-when-downgrade");
-		response.headers.set("Permissions-Policy", PERMISSIONS_POLICY);
-		return response;
+		return await getAssetFromKV(event, options);
+		//on error try appending html
 	} catch (e) {
 		try {
-			const notFoundResponse = await getAssetFromKV(event, {
+			const options = { mapRequestToAsset: (req) => new Request(`${new URL(req.url)}.html`, req) };
+			const page = await getAssetFromKV(event, options);
+			return new Response(page.body, page);
+			//on error return 404
+		} catch (e) {
+			let notFoundResponse = await getAssetFromKV(event, {
 				mapRequestToAsset: (req) => new Request(`${new URL(req.url).origin}/404.html`, req),
 			});
 			return new Response(notFoundResponse.body, {
 				...notFoundResponse,
 				status: 404,
 			});
-		} catch (e) {}
-
-		return new Response(e.message || e.toString(), { status: 500 });
+		}
+		// return new Response(e.message || e.toString(), { status: 500 });
 	}
 }
 
@@ -45,7 +44,7 @@ async function performRedirect(event) {
 	if (redirect[urlParts[0]]) {
 		return Response.redirect(redirect[urlParts[0]], 301);
 	}
-	if (redirect[0] === "gh") {
+	if (urlParts[0] == "gh") {
 		switch (urlParts.length) {
 			case 1:
 				return Response.redirect(GH_URL, 301);
