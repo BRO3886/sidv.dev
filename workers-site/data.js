@@ -6,4 +6,5 @@ export const redirect = {
 	lnkdn: "https://www.linkedin.com/in/siddharthav22/",
 	twt: "https://twitter.com/sidv_22",
 	riviera: "https://play.google.com/store/apps/details?id=com.riviera.riviera_app",
+	"flutter-day-2020": "https://www.youtube.com/playlist?list=PLiI1-GFGRl4sL1lurgBvJZUMxxi6_gRcQ",
 };
