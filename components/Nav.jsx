@@ -39,7 +39,7 @@ const Nav = (props) => {
                     <a
                       className={`
 									${props.name === link.to.replace('/', '') ? 'text-blue' : ''}
-									text-sm font-medium hover:text-blue lg:p-4 py-3 px-0 block md:inline`}
+									text-sm font-medium hover:text-blue lg:p-4 py-3 px-0 block lg:inline`}
                     >
                       {link.text}
                     </a>
