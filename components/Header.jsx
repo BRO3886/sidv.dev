@@ -6,7 +6,7 @@ const Header = () => {
     <Head>
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      <meta name="theme-color" content="#000000" />
+      <meta name="theme-color" content="#ffffff" />
       <meta property="og:image" content="/assets/me.webp"></meta>
       <meta
         name="google-site-verification"
