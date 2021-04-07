@@ -22,8 +22,8 @@ const WorkCard = (props) => {
               <h2 className="text-lg md:text-xl lg:text-2xl font-bold">
                 {props.work.title}
               </h2>
-              <p className="text-grey mb-0 capitalize">{props.work.role}</p>
-              <p className="text-grey mb-3 capitalize text-xs">{props.work.duration}</p>
+              <p className="dark:text-grey text-darkgrey mb-0 capitalize">{props.work.role}</p>
+              <p className="dark:text-grey text-darkgrey mb-3 capitalize text-xs">{props.work.duration}</p>
               <ul className="list-disc ml-5">
                 {props.work.about.map((line, index) => {
                   return (
