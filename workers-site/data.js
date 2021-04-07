@@ -9,4 +9,6 @@ export const redirect = {
     'https://play.google.com/store/apps/details?id=com.riviera.riviera_app',
   'flutter-day-2020':
     'https://www.youtube.com/playlist?list=PLiI1-GFGRl4sL1lurgBvJZUMxxi6_gRcQ',
+  fitnest:
+    'https://devpost.com/software/fitnest?ref_content=my-projects-tab&ref_feature=my_projects',
 };
