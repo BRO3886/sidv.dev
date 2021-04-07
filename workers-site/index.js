@@ -1,4 +1,4 @@
-import { handleRequest } from "./handler";
+import { handleRequest } from './handler';
 
 /**
  * The DEBUG flag will do two things that help during development:
@@ -9,7 +9,7 @@ import { handleRequest } from "./handler";
  */
 // const DEBUG = false;
 
-addEventListener("fetch", (event) => {
-	console.log("got event");
-	event.respondWith(handleRequest(event));
+addEventListener('fetch', (event) => {
+  console.log('got event');
+  event.respondWith(handleRequest(event));
 });

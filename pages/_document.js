@@ -1,17 +1,17 @@
-import Document, { Head, Html, Main, NextScript } from "next/document";
+import Document, { Head, Html, Main, NextScript } from 'next/document';
 
 class MyDocument extends Document {
-	static async getInitialProps(ctx) {
-		const initialProps = await Document.getInitialProps(ctx);
-		return { ...initialProps };
-	}
-	render() {
-		return (
-			<Html>
-				<Head>
-					<script
-						dangerouslySetInnerHTML={{
-							__html: `
+  static async getInitialProps(ctx) {
+    const initialProps = await Document.getInitialProps(ctx);
+    return { ...initialProps };
+  }
+  render() {
+    return (
+      <Html>
+        <Head>
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
             (function() {
               var storageKey = 'dark';
               var classNameDark = 'dark';
@@ -37,16 +37,16 @@ class MyDocument extends Document {
               }
             })();
           `,
-						}}
-					/>
-				</Head>
-				<body>
-					<Main />
-					<NextScript />
-				</body>
-			</Html>
-		);
-	}
+            }}
+          />
+        </Head>
+        <body>
+          <Main />
+          <NextScript />
+        </body>
+      </Html>
+    );
+  }
 }
 
 export default MyDocument;
