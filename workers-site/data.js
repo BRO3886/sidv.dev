@@ -11,4 +11,5 @@ export const redirect = {
     'https://www.youtube.com/playlist?list=PLiI1-GFGRl4sL1lurgBvJZUMxxi6_gRcQ',
   fitnest:
     'https://devpost.com/software/fitnest?ref_content=my-projects-tab&ref_feature=my_projects',
+  katamari: 'https://github.com/GDGVIT/katamari'
 };
