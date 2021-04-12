@@ -44,7 +44,7 @@ const Contact = () => {
                   backgroundColor: '#2B8BFC',
                   color: '#FFFFFF',
                 }}
-                className="bg-lightblue dark:bg-blue px-28 md:px-40 py-2 md:py-3 mt-20 rounded-lg md:text-lg text-sm text-blue dark:text-white font-medium capitalize focus:outline-none"
+                className="bg-lightblue dark:bg-blue px-28 md:px-36 py-2 md:py-3 mt-20 rounded-lg md:text-lg text-sm text-blue dark:text-white font-medium capitalize focus:outline-none"
               >
                 {content.resume.btn}
               </motion.button>
