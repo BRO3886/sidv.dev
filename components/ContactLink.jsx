@@ -11,7 +11,7 @@ const ContactLink = (props) => {
         <img
           src={props.data.img}
           alt={props.data.name}
-          className="h-12 md:h-16"
+          className="h-16 md:h-24"
         ></img>
       </a>
       {/* <div>{props.data.name}</div> */}

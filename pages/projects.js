@@ -10,7 +10,7 @@ const projects = () => {
     <div className="dark:bg-black">
       <Header />
       <Nav name="projects" />
-      <div className="w-10/12 pt-20  md:pt-32 mx-auto flex flex-col dark:text-white">
+      <div className="w-10/12 pt-20 md:pt-28 mx-auto flex flex-col dark:text-white">
         <h2 className="text-2xl md:text-5xl font-bold my-2">
           My <span className="text-blue">Projects</span>
         </h2>
