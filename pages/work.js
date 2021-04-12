@@ -14,8 +14,8 @@ const work = () => {
         <h2 className="text-3xl md:text-5xl font-bold md:mt-10">
           Work <span className="text-blue">Experience</span>
         </h2>
-        <div style={{ height: '5vh' }}></div>
-        <div className="grid grid-cols-1 gap-6 ">
+        <div style={{ height: '3vh' }}></div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {content.work.map((work, index) => {
             return <WorkCard work={work} key={index} />;
           })}

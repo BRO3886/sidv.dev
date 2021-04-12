@@ -3,7 +3,7 @@ import Link from 'next/link';
 import content from '../lib/content';
 const Nav = (props) => {
   return (
-    <header className="px-10 md:px-20 flex flex-wrap items-center lg:py-0 py-2 text-darkgrey bg-opacity-70 top-0 fixed w-screen z-10 bg-white border-b dark:border-darkergrey border-gray-200 dark:bg-black dark:text-white">
+    <header className="px-10 md:px-20 flex flex-wrap items-center lg:py-0 py-2 text-darkgrey bg-opacity-70 top-0 fixed w-screen z-10 bg-gray-50 border-b dark:border-darkergrey border-gray-200 dark:bg-black dark:text-white">
       <div className="flex-1 justify-between w-10/12 items-center">
         <Link href="/">
           <a href="/">
