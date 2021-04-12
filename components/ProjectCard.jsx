@@ -1,8 +1,14 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const ProjectCard = (props) => {
   return (
-    <div className="bg-white dark:bg-darkergrey dark:border-transparent rounded-xl transition-shadow duration-400 hover:shadow-xl border-opacity-100 border hover:border-transparent m-1">
+    <motion.div
+      transition={{ type: 'spring', duration: 0.4 }}
+      whileHover={{ scale: 1.02 }}
+      whileTap={{ scale: 0.99 }}
+      className="bg-white dark:bg-darkergrey dark:border-transparent rounded-xl transition-shadow duration-400 hover:shadow-xl border-opacity-100 border hover:border-transparent m-1"
+    >
       <a href={props.project.redirect}>
         <img
           src={props.project.img}
@@ -26,7 +32,7 @@ const ProjectCard = (props) => {
           </a>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

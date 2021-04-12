@@ -5,10 +5,11 @@ const WorkCard = (props) => {
   return (
     <motion.button
       className="text-left focus: outline-none flex flex-col"
+      transition={{ type: "spring", duration: 0.4 }}
       whileHover={{ scale: 1.02 }}
       whileTap={{ scale: 0.99 }}
     >
-      <div className="flex-1 px-10 py-12 bg-white rounded-xl dark:bg-darkergrey dark:border-transparent border-opacity-100 border p-2 lg:p-6">
+      <div className="flex-1 px-10 py-12 bg-white rounded-xl dark:bg-darkergrey  duration-400 dark:border-transparent border-opacity-100 border p-2 lg:p-6 hover:shadow-xl hover:border-transparent">
         <h2 className="text-lg md:text-xl lg:text-2xl font-bold">
           {props.work.title}
         </h2>
