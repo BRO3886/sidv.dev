@@ -13,19 +13,19 @@ export default function Home() {
       <Nav props="home" />
       <Landing />
       <div className="dark:bg-black" style={{ height: '10vh' }}></div>
-      <h2 className="w-10/12 mx-auto text-2xl md:text-4xl font-bold md:mt-10 dark:text-white">
+      <h2 className="w-10/12 md:w-8/12 mx-auto text-2xl md:text-4xl lg:text-5xl font-bold md:mt-10 dark:text-white">
         About <span className="text-blue">Me</span>
       </h2>
       <br />
       <About />
       <div style={{ height: '10vh' }}></div>
-      <h2 className="w-10/12 mx-auto text-2xl md:text-4xl font-bold md:mt-10">
+      <h2 className="w-10/12 md:w-8/12 mx-auto text-2xl md:text-4xl lg:text-5xl font-bold md:mt-10">
         <span className="text-blue">Tech</span> Stack
       </h2>
       <br />
       <TechStack />
       <div style={{ height: '10vh' }}></div>
-      <div className="w-10/12 mx-auto">
+      <div className="w-10/12 md:w-8/12 mx-auto">
         You can check out some of my{' '}
         <Link href="/projects">
           <a className="text-blue">projects</a>
