@@ -9,31 +9,33 @@ const WorkCard = (props) => {
       whileHover={{ scale: 1.02 }}
       whileTap={{ scale: 0.99 }}
     >
-      <a
-        href={props.work.url}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="flex-1 px-10 py-12 bg-white rounded-xl dark:bg-darkergrey  duration-400 dark:border-transparent border-opacity-100 border p-2 lg:p-6 hover:shadow-xl hover:border-transparent"
-      >
-        <h2 className="text-lg md:text-xl lg:text-2xl font-bold">
-          {props.work.title}
-        </h2>
-        <p className="dark:text-grey text-darkgrey mb-0 capitalize">
-          {props.work.role}
-        </p>
-        <p className="dark:text-grey text-darkgrey mb-3 capitalize text-xs">
-          {props.work.duration}
-        </p>
-        <ul className="list-disc ml-5">
-          {props.work.about.map((line, index) => {
-            return (
-              <li className="text-xl" key={index}>
-                {line}
-              </li>
-            );
-          })}
-        </ul>
-      </a>
+      <div className="flex-1 bg-white rounded-xl dark:bg-darkergrey  duration-400 dark:border-transparent border-opacity-100 border p-6 hover:shadow-xl hover:border-transparent">
+        <a
+          href={props.work.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex-grow"
+        >
+          <h2 className="text-2xl sm:text-2xl md:text-xl lg:text-3xl font-bold">
+            {props.work.title}
+          </h2>
+          <p className="dark:text-grey text-darkgrey mb-0 capitalize">
+            {props.work.role}
+          </p>
+          <p className="dark:text-grey text-darkgrey mb-3 capitalize text-xs">
+            {props.work.duration}
+          </p>
+          <ul className="list-disc ml-5">
+            {props.work.about.map((line, index) => {
+              return (
+                <li className="text-xl" key={index}>
+                  {line}
+                </li>
+              );
+            })}
+          </ul>
+        </a>
+      </div>
     </motion.button>
   );
 };

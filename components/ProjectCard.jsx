@@ -7,7 +7,7 @@ const ProjectCard = (props) => {
       transition={{ type: 'spring', duration: 0.4 }}
       whileHover={{ scale: 1.02 }}
       whileTap={{ scale: 0.99 }}
-      className="bg-white dark:bg-darkergrey dark:border-transparent rounded-xl transition-shadow duration-400 hover:shadow-xl border-opacity-100 border hover:border-transparent m-1"
+      className="flex-grow bg-white dark:bg-darkergrey dark:border-transparent rounded-xl transition-shadow duration-400 hover:shadow-xl border-opacity-100 border hover:border-transparent m-1"
     >
       <a href={props.project.redirect}>
         <img
