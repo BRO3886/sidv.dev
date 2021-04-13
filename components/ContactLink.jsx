@@ -5,7 +5,7 @@ const ContactLink = (props) => {
   return (
     <motion.div
       whileTap={{ scale: 0.95 }}
-      className="m-1 inline-block text-white"
+      className="mr-5 mt-2 md:mr-10 md:mt-4 inline-block text-white"
     >
       <a href={props.data.link}>
         <img

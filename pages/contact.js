@@ -21,7 +21,7 @@ const Contact = () => {
           <div className="text-darkgrey dark:text-grey font-semibold mb-4 md:text-xl">
             {'PRIMARY'}
           </div>
-          <div className="space-x-8">
+          <div className="">
             {content.contact.primary.map((item, index) => {
               return <ContactLink key={index} data={item} />;
             })}
@@ -30,7 +30,7 @@ const Contact = () => {
           <div className="text-darkgrey dark:text-grey font-semibold mb-4 md:text-xl">
             {'SOCIAL'}
           </div>
-          <div className="space-x-8">
+          <div className="">
             {content.contact.social.map((item, index) => {
               return <ContactLink key={index} data={item} />;
             })}
