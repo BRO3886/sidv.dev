@@ -13,7 +13,7 @@ const Contact = () => {
       <Header />
       <Nav name="contact" />
       <div className="flex flex-col min-h-screen">
-        <h2 className="w-10/12 mx-auto text-3xl md:text-5xl font-bold pt-60 md:pt-28 dark:text-white">
+        <h2 className="w-10/12 mx-auto text-3xl md:text-5xl font-bold pt-60  md:pt-36 dark:text-white">
           Get in <span className="text-blue">Touch</span>
         </h2>
         <div className="w-10/12 mx-auto flex flex-col justify-center">

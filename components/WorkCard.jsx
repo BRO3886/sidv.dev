@@ -9,7 +9,7 @@ const WorkCard = (props) => {
       whileHover={{ scale: 1.02 }}
       whileTap={{ scale: 0.99 }}
     >
-      <div className="flex-1 bg-white rounded-xl dark:bg-darkergrey  duration-400 dark:border-transparent border-opacity-100 border p-6 hover:shadow-xl hover:border-transparent">
+      <div className="flex-1 bg-white rounded-xl dark:bg-darkergrey duration-400 dark:border-transparent border-opacity-100 border p-6 hover:shadow-xl hover:border-transparent">
         <a
           href={props.work.url}
           target="_blank"

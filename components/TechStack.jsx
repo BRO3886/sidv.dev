@@ -14,7 +14,7 @@ const TechStack = () => {
               className="m-4"
             >
               <span className="bg-white shadow-lg m-4 rounded-full">
-                <img className="h-20 md:h-24 lg:h-32" src={tech.img} alt={tech.name} />
+                <img className="h-18 md:h-24 lg:h-32" src={tech.img} alt={tech.name} />
                 <h4 className="mt-1 text-sm md:text-base text-darkgrey dark:text-grey">
                   {tech.name}
                 </h4>
