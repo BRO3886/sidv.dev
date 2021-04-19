@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
 import ContactLink from '../components/ContactLink';
 import Header from '../components/Header';
 import Nav from '../components/Nav';
