@@ -5,24 +5,8 @@ import { motion } from 'framer-motion';
 import ThemeContext from '../theme/ThemeContext';
 import content from '../lib/content';
 
-const githubFunc = () => {
-  console.log('\x1b[33m%s\x1b[0m', 'Why are you checking the console!??');
-  console.log(`
-   ____________________________________
-  /  Why don't you check out my github \\
-  \\ profile : github.com/BRO3886       /
-   ------------------------------------
-          \\   ^__^
-           \\  (oo)\_______
-              (__)\       )\\/\\
-                  ||----w |
-                  ||     ||
-  `);
-};
-
 const Landing = () => {
   const { _, toggleDark } = useContext(ThemeContext);
-  githubFunc();
   return (
     <div className="flex items-center justify-center h-screen dark:bg-black">
       <div className="w-10/12 md:w-9/12 lg:w-8/12 mx-auto flex flex-col md:flex-row-reverse items-center justify-between">
