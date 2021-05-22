@@ -1,5 +1,5 @@
 import { getAssetFromKV } from '@cloudflare/kv-asset-handler';
-import { redirectv2 } from './data.js';
+import { redirects } from './data.js';
 
 const GH_URL = `https://github.com/BRO3886`;
 
@@ -42,8 +42,8 @@ async function performRedirect(event) {
     .replace(BASE_URL, '')
     .split('/')
     .map((s) => s.toLowerCase());
-  if (redirectv2[urlParts[0]]) {
-    return Response.redirect(redirectv2[urlParts[0]]['url'], 301);
+  if (redirects[urlParts[0]]) {
+    return Response.redirect(redirects[urlParts[0]]['url'], 301);
   }
   if (urlParts[0] == 'gh') {
     switch (urlParts.length) {
