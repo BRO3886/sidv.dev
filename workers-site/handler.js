@@ -42,7 +42,7 @@ async function performRedirect(event) {
     .replace(BASE_URL, '')
     .split('/')
     .map((s) => s.toLowerCase());
-  if (redirect[urlParts[0]]) {
+  if (redirectv2[urlParts[0]]) {
     return Response.redirect(redirectv2[urlParts[0]]['url'], 301);
   }
   if (urlParts[0] == 'gh') {
