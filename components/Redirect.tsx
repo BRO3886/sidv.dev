@@ -1,9 +1,19 @@
-import { React, useContext } from 'react';
+import React from 'react';
+import { useContext } from 'react';
 import { motion } from 'framer-motion';
 import ThemeContext from '../theme/ThemeContext';
 
-const Redirect = (props) => {
-  const { dark, _ } = useContext(ThemeContext);
+type Props = {
+  item: RedirectItem;
+};
+
+export type RedirectItem = {
+  url: string;
+  title: string;
+};
+
+const Redirect = (props: Props) => {
+  const { dark } = useContext(ThemeContext);
   return (
     <motion.a
       href={props.item.url}
@@ -20,5 +30,4 @@ const Redirect = (props) => {
     </motion.a>
   );
 };
-
-export default Redirect;
+export { Redirect };

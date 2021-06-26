@@ -1,7 +1,20 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-const ProjectCard = (props) => {
+type Props = {
+  project: ProjectData;
+};
+
+type ProjectData = {
+  redirect: string;
+  img: string;
+  title: string;
+  subtitle: string;
+  github: string;
+  link: string;
+};
+
+const ProjectCard = (props: Props) => {
   return (
     <motion.div
       transition={{ type: 'spring', duration: 0.4 }}

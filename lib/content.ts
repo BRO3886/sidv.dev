@@ -132,7 +132,7 @@ export default {
       link: 'https://github.com/BRO3886/gtasks',
     },
     {
-      title: 'Medium RSS API',
+      title: 'Medium RSS-API',
       subtitle: 'A simple webservice to get JSON feed from Medium RSS Feed.',
       img: 'assets/projects/medium-api.webp',
       redirect: 'https://medium-rss-api.herokuapp.com/docs',

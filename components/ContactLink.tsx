@@ -1,7 +1,17 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-const ContactLink = (props) => {
+type Props = {
+  data: ContactData;
+};
+
+type ContactData = {
+  name: string;
+  img: string;
+  link: string;
+};
+
+const ContactLink = (props: Props) => {
   return (
     <motion.div
       whileTap={{ scale: 0.95 }}

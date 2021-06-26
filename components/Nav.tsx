@@ -1,9 +1,14 @@
-import { React, useContext } from 'react';
+import * as React from 'react';
+import { useContext } from 'react';
 import Link from 'next/link';
 import content from '../lib/content';
 import ThemeContext from '../theme/ThemeContext';
 
-const Nav = (props) => {
+type Props = {
+  name: string;
+};
+
+const Nav = (props: Props) => {
   const { dark, toggleDark } = useContext(ThemeContext);
   return (
     <header className="px-10 md:px-32 flex justify-between flex-wrap items-center lg:py-0 py-2 text-darkgrey bg-opacity-70 top-0 fixed w-screen z-10 bg-gray-50 border-b dark:border-darkergrey border-gray-200 dark:bg-black dark:text-white">

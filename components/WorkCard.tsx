@@ -1,7 +1,20 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-const WorkCard = (props) => {
+type Props = {
+  work: Work;
+};
+
+type Work = {
+  title: string;
+  url: string;
+  img: string;
+  duration: string;
+  role: string;
+  about: string[];
+};
+
+const WorkCard = (props: Props) => {
   return (
     <motion.button
       className="text-left focus:outline-none flex flex-col"
