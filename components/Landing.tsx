@@ -19,7 +19,6 @@ const Landing = () => {
           >
             <img
               className="rounded-full"
-              effect="blur"
               src={content.landing.img.url}
               alt={content.landing.img.alt}
             />
