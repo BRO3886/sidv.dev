@@ -126,8 +126,8 @@ export default {
     {
       title: 'Google Tasks CLI',
       subtitle: 'Manage your Google Tasks right from your terminal.',
-      img: 'assets/projects/gtasks.svg',
-      redirect: 'https://asciinema.org/a/372759',
+      img: 'assets/projects/gtasks.webp',
+      redirect: 'https://youtu.be/trsdIUu3pMw',
       github: 'https://github.com/BRO3886/gtasks',
       link: 'https://github.com/BRO3886/gtasks',
     },

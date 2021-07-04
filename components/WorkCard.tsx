@@ -17,7 +17,7 @@ type Work = {
 const WorkCard = (props: Props) => {
   return (
     <motion.button
-      className="text-left focus:outline-none flex flex-col"
+      className="text-left focus:outline-none flex flex-col p-2 "
       transition={{ type: 'spring', duration: 0.4 }}
       whileHover={{ scale: 1.02 }}
       whileTap={{ scale: 0.99 }}
