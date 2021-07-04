@@ -35,4 +35,8 @@ export const redirects = {
     title: 'Katamari',
     url: 'https://github.com/GDGVIT/katamari',
   },
+  "gtasks-privacy-policy": {
+    title: "gtasks - Privacy Policy",
+    url:"https://docs.google.com/document/d/e/2PACX-1vSWlBMvUV_Rv90XcYjIOianbigQOakTizgC6YV8iZhbTZRk5tc3oMnTuV-tiGr9g8YAnaR9c5BOzi4Z/pub"
+  }
 };
