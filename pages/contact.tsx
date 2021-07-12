@@ -35,7 +35,11 @@ const Contact = () => {
             })}
           </div>
           <div>
-            <a href={content.resume.file} download>
+            <a
+              href="https://sidv.dev/resume"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <motion.button
                 whileHover={{ backgroundColor: '#2B8BFC', color: '#FFFFFF' }}
                 whileTap={{

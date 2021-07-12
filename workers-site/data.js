@@ -1,4 +1,8 @@
 export const redirects = {
+  resume: {
+    title: 'Resume',
+    url: 'https://drive.google.com/file/d/1zXehK6K_WRQre3WosyM3613wuVHRV-iW/view',
+  },
   twt: {
     title: 'Twitter',
     url: 'https://twitter.com/sidv_22',
@@ -35,8 +39,8 @@ export const redirects = {
     title: 'Katamari',
     url: 'https://github.com/GDGVIT/katamari',
   },
-  "gtasks-privacy-policy": {
-    title: "gtasks - Privacy Policy",
-    url:"https://docs.google.com/document/d/e/2PACX-1vSWlBMvUV_Rv90XcYjIOianbigQOakTizgC6YV8iZhbTZRk5tc3oMnTuV-tiGr9g8YAnaR9c5BOzi4Z/pub"
-  }
+  'gtasks-privacy-policy': {
+    title: 'gtasks - Privacy Policy',
+    url: 'https://docs.google.com/document/d/e/2PACX-1vSWlBMvUV_Rv90XcYjIOianbigQOakTizgC6YV8iZhbTZRk5tc3oMnTuV-tiGr9g8YAnaR9c5BOzi4Z/pub',
+  },
 };

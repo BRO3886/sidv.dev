@@ -119,7 +119,7 @@ export default {
     ],
   },
   resume: {
-    file: '/assets/resume/Resume-Siddhartha-Varma.pdf',
+    file: 'https://sidv.dev/resume',
     btn: 'DOWNLOAD RESUME',
   },
   projects: [
