@@ -39,7 +39,7 @@ export default {
     '',
     'I’m a technology enthusiast, with a focus on creating minimal and beautiful UIs which are performant.',
     '',
-    'I love making smooth apps with Flutter and React, and robust backends with Go, Node and Django.',
+    'I love making smooth apps with Flutter, Kotlin, and robust backends with Go and Node.',
     '',
     'I also have a keen interest in design.',
   ],
@@ -50,7 +50,7 @@ export default {
     },
     {
       img: '/assets/stack/kotlin.svg',
-      name: 'Kotlin',
+      name: 'Android',
     },
     {
       img: '/assets/stack/go.svg',
@@ -68,14 +68,14 @@ export default {
       img: '/assets/stack/react.svg',
       name: 'React',
     },
-    {
-      img: '/assets/stack/vue.svg',
-      name: 'Vue',
-    },
-    {
-      img: '/assets/stack/nextjs.svg',
-      name: 'Next JS',
-    },
+    // {
+    //   img: '/assets/stack/vue.svg',
+    //   name: 'Vue',
+    // },
+    // {
+    //   img: '/assets/stack/nextjs.svg',
+    //   name: 'Next JS',
+    // },
     {
       img: '/assets/stack/nodejs.svg',
       name: 'Node',
