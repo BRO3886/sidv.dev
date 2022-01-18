@@ -17,11 +17,11 @@ const NotFound = () => {
               </h1>
               <h1 className="md:text-4xl text-lg font-bold text-blue">404</h1>
               <h2 className="text-base md:text-3xl dark:text-white">
-                The page you're looking for does not exist.
+                The page you&#39;re looking for does not exist.
               </h2>
-              <Link href="/">
+              <Link href="/" passHref>
                 <button className="bg-lightblue dark:bg-blue px-5 md:px-10 py-2 md:py-3 mt-10 rounded-lg md:text-lg text-sm text-blue dark:text-white font-medium capitalize hover:bg-blue hover:text-white transition-colors duration-400  focus:outline-none">
-                  {'HOME'}
+                  HOME
                 </button>
               </Link>
             </div>

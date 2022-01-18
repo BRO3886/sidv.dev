@@ -1,6 +1,5 @@
 import React, { useContext } from 'react';
 import Link from 'next/link';
-import Typical from 'react-typical';
 import { motion } from 'framer-motion';
 import ThemeContext from '../theme/ThemeContext';
 import content from '../lib/content';
@@ -29,9 +28,11 @@ const Landing = () => {
             {content.landing.text[0]}
             <br />
             {content.landing.text[1]}{' '}
-            <span className="text-black dark:text-white transition-all duration-200">{content.landing.text[2]}</span>
+            <span className="text-black dark:text-white transition-all duration-200">
+              {content.landing.text[2]}
+            </span>
           </h2>
-          <Link href="/contact">
+          <Link href="/contact" passHref>
             <motion.button
               whileHover={{ backgroundColor: '#2B8BFC', color: '#FFFFFF' }}
               whileTap={{

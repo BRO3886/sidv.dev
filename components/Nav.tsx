@@ -13,12 +13,12 @@ const Nav = (props: Props) => {
   return (
     <header className="px-10 md:px-32 flex justify-between flex-wrap items-center lg:py-0 py-2 text-darkgrey bg-opacity-70 top-0 fixed w-screen z-10 bg-gray-50 border-b dark:border-darkergrey border-gray-200 dark:bg-black dark:text-white">
       <div className="flex flex-row">
-        <a href="/">
+        <Link href="/" passHref>
           <h1 className="text-3xl font-bold text-black dark:text-white">
             {content.nav.logo}
             <span className="rounded-full bg-blue h-2 w-2 inline-block"></span>
           </h1>
-        </a>
+        </Link>
         <button
           onClick={toggleDark}
           className="ml-4 fill-current focus:outline-none"
@@ -88,7 +88,7 @@ const Nav = (props: Props) => {
             <li>
               {content.nav.links.map((link, index) => {
                 return (
-                  <Link href={link.to} key={index}>
+                  <Link href={link.to} key={index} passHref>
                     <a
                       className={`
 									${props.name === link.to.replace('/', '') ? 'text-blue' : ''}

@@ -32,7 +32,7 @@ export default function Home() {
         </Link>
         {' or '}
         <Link href="/contact">
-          <a className="text-blue">let's get in touch.</a>
+          <a className="text-blue">let&#39;s get in touch.</a>
         </Link>
       </div>
       <div style={{ height: '10vh' }}></div>
