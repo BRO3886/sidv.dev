@@ -1,13 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Head from 'next/head';
+import ThemeContext from '../theme/ThemeContext';
 
 const Header = (props) => {
   const { title } = props;
+  const { dark, _ } = useContext(ThemeContext);
   return (
     <Head>
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      <meta name="theme-color" content="#ffffff" />
+      <meta name="theme-color" content={!dark ? '#ffffff' : '#000000'} />
       <meta
         name="description"
         content="Developer. Designer. Tech Enthusiast."
