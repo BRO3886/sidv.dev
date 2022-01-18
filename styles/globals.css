@@ -25,24 +25,6 @@ header {
   -webkit-backdrop-filter: blur(1rem);
 }
 
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background: #fff;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #c4c4c4;
-  border: 2px solid white;
-  border-radius: 8px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #a5a5a5;
-}
-
 #menu-toggle:checked + #menu {
   display: block;
 }

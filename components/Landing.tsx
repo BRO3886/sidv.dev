@@ -25,20 +25,12 @@ const Landing = () => {
           </motion.button>
         </div>
         <div className="text-black dark:text-white text-center md:text-left">
-          <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold">
+          <h2 className="transition-all duration-200 text-3xl md:text-5xl lg:text-6xl font-bold">
             {content.landing.text[0]}
             <br />
             {content.landing.text[1]}{' '}
-            <span className="text-blue">{content.landing.text[2]}</span>
+            <span className="text-black dark:text-white transition-all duration-200">{content.landing.text[2]}</span>
           </h2>
-          <h1 className="text-darkgrey dark:text-grey text-xl">
-            {content.landing.text[3]}{' '}
-            <Typical
-              steps={content.landing.typical}
-              loop={Infinity}
-              className="inline-block text-darkgrey dark:text-grey"
-            />
-          </h1>
           <Link href="/contact">
             <motion.button
               whileHover={{ backgroundColor: '#2B8BFC', color: '#FFFFFF' }}
@@ -48,7 +40,7 @@ const Landing = () => {
                 color: '#FFFFFF',
               }}
               transition={{ type: 'spring', duration: 0.2 }}
-              className="bg-lightblue dark:bg-blue px-10 py-3 md:px-24 lg:px-36 mt-10 rounded-lg text-blue dark:text-white font-medium capitalize focus:outline-none"
+              className="bg-lightblue dark:bg-blue px-10 py-3 md:px-24 lg:px-36 mt-10 rounded-lg text-blue dark:text-white font-medium capitalize focus:outline-none transition-all duration-150"
             >
               {content.landing.btnText.toUpperCase()}
             </motion.button>

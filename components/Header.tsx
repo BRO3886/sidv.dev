@@ -1,7 +1,8 @@
 import React from 'react';
 import Head from 'next/head';
 
-const Header = () => {
+const Header = (props) => {
+  const { title } = props;
   return (
     <Head>
       <meta charSet="utf-8" />
@@ -44,7 +45,7 @@ const Header = () => {
         sizes="16x16"
         href="/favicon-16x16.png"
       />
-      <title>Siddhartha Varma</title>
+      <title>{title !== null ? title : 'Siddhartha Varma'}</title>
     </Head>
   );
 };

@@ -35,13 +35,13 @@ export default {
     btnText: 'Get in Touch',
   },
   about: [
-    'A Fullstack Developer based in India. Currently pursuing BTech in Computer Science from VIT-Vellore.',
+    "A Fullstack Developer based in Delhi, India. Currently an Intern at Groww, India. I'm pursuing BTech in Computer Science from VIT-Vellore.",
     '',
-    'I’m a technology enthusiast, with a focus on creating minimal and beautiful UIs which are performant.',
+    "I have hands on experience with various languages and frameworks. I've worked with Flutter and Go. I've made projects with React, Node. Delved a bit into native android dev with Kotlin and Jetpack Compose.",
     '',
-    'I love making smooth apps with Flutter, Kotlin, and robust backends with Go and Node.',
+    'I love open source. I try to contribute to open source projects (which I like or use) from time to time. Trying to get better at contributing.',
     '',
-    'I also have a keen interest in design.',
+    'I also have some interest in design. I love to design UIs, social media posters for my projects on my own. In fact, I designed this website too!',
   ],
   techstack: [
     {
@@ -175,9 +175,34 @@ export default {
   ],
   work: [
     {
+      title: 'Groww',
+      url: 'https://groww.in',
+      img: 'assets/work/groww.webp',
+      imgDark: 'assets/work/groww.webp',
+      duration: 'Jan 2022 - Present',
+      role: 'Software Engineering Intern',
+      about: [
+        'Groww is an investing platform where users can find the best stocks and MFs, and invest their money hassle free. It is democratising finance in India.',
+        'Currently working on the core platform services as a backend developer.',
+      ],
+    },
+    {
+      title: 'Nearcast',
+      url: 'https://nearcast.com',
+      img: 'assets/work/nearcast-light.webp',
+      imgDark: 'assets/work/nearcast-dark.webp',
+      duration: 'Apr 2021 - August 2021',
+      role: 'Flutter Dev',
+      about: [
+        'Nearcast is a neighbourhood social media platform, based in Mountain View, California',
+        'Worked on the flutter app of the platform, used a lot of native modules for the video capture and processing',
+      ],
+    },
+    {
       title: 'Winuall',
       url: 'https://winuall.com',
-      img: 'assets/work/winuall.webp',
+      img: 'assets/work/winuall-light.webp',
+      imgDark: 'assets/work/winuall-dark.webp',
       duration: 'Jan 2021 - Apr 2021',
       role: 'Backend Dev Intern',
       about: [
@@ -185,21 +210,22 @@ export default {
         'Currently working on the marketplace backend, jitsi integration and app deployment automation pipeline.',
       ],
     },
-    {
-      title: 'WY;FY',
-      url: 'https://www.withyouforyou.co.in/',
-      img: 'assets/work/wyfy.jfif',
-      duration: 'May 2020 - Dec 2020',
-      role: 'Co-Founder and CTO',
-      about: [
-        'With You; For You is a SaaS product, which strives to make mental health services easily accessible. ',
-        'I was handling the tech for WY;FY along with another dev.',
-      ],
-    },
+    // {
+    //   title: 'WY;FY',
+    //   url: 'https://www.withyouforyou.co.in/',
+    //   img: 'assets/work/wyfy.jfif',
+    //   duration: 'May 2020 - Dec 2020',
+    //   role: 'Co-Founder and CTO',
+    //   about: [
+    //     'With You; For You is a SaaS product, which strives to make mental health services easily accessible. ',
+    //     'I was handling the tech for WY;FY along with another dev.',
+    //   ],
+    // },
     {
       title: 'Nirmitee.io',
       url: 'https://www.nirmitee.io/',
-      img: 'assets/work/nirmitee.png',
+      img: 'assets/work/nirmitee.webp',
+      imgDark: 'assets/work/nirmitee.webp',
       duration: 'Sep 2020 - Nov 2020',
       role: 'Flutter Intern',
       about: [
@@ -210,7 +236,8 @@ export default {
     {
       title: 'OYO Rooms',
       url: 'https://www.oyorooms.com/',
-      img: 'assets/work/oyo.png',
+      img: 'assets/work/oyo.webp',
+      imgDark: 'assets/work/oyo.webp',
       duration: 'June 2019 - July 2019',
       role: 'Intern - Technology',
       about: [

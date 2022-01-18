@@ -9,13 +9,13 @@ import { motion } from 'framer-motion';
 const Contact = () => {
   return (
     <div className="dark:bg-black">
-      <Header />
+      <Header title="Get in touch" />
       <Nav name="contact" />
       <div className="flex flex-col min-h-screen">
-        <h2 className="w-10/12 mx-auto text-3xl md:text-5xl font-bold pt-60  md:pt-36 dark:text-white">
-          Get in <span className="text-blue">Touch</span>
+        <h2 className="w-10/12 md:w-9/12 lg:w-8/12 mx-auto text-3xl md:text-5xl font-bold pt-60  md:pt-36 dark:text-white">
+          Get in Touch
         </h2>
-        <div className="w-10/12 mx-auto flex flex-col justify-center">
+        <div className="w-10/12 md:w-9/12 lg:w-8/12  mx-auto flex flex-col justify-center">
           <br />
           <div className="text-darkgrey dark:text-grey font-semibold mb-4 md:text-xl">
             {'PRIMARY'}
