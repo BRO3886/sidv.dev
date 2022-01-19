@@ -2,7 +2,7 @@ import React from 'react';
 import Nav from '../components/Nav';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import content from '../lib/content';
+import { workInfo } from '../lib/content';
 import WorkCard from '../components/WorkCard';
 
 const work = () => {
@@ -16,7 +16,7 @@ const work = () => {
         </h2>
         <div style={{ height: '3vh' }}></div>
         <div className="grid grid-cols-1 gap-8">
-          {content.work.map((work, index) => {
+          {workInfo.map((work, index) => {
             return <WorkCard work={work} key={index} />;
           })}
         </div>

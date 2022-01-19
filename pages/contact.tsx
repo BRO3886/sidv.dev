@@ -3,7 +3,7 @@ import ContactLink from '../components/ContactLink';
 import Header from '../components/Header';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
-import content from '../lib/content';
+import { contactInfo, resume } from '../lib/content';
 import { motion } from 'framer-motion';
 
 const Contact = () => {
@@ -21,7 +21,7 @@ const Contact = () => {
             {'PRIMARY'}
           </div>
           <div className="">
-            {content.contact.primary.map((item, index) => {
+            {contactInfo.primary.map((item, index) => {
               return <ContactLink key={index} data={item} />;
             })}
           </div>
@@ -30,16 +30,12 @@ const Contact = () => {
             {'SOCIAL'}
           </div>
           <div className="">
-            {content.contact.social.map((item, index) => {
+            {contactInfo.social.map((item, index) => {
               return <ContactLink key={index} data={item} />;
             })}
           </div>
           <div>
-            <a
-              href="https://sidv.dev/resume"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href={resume.url} target="_blank" rel="noopener noreferrer">
               <motion.button
                 whileHover={{ backgroundColor: '#2B8BFC', color: '#FFFFFF' }}
                 whileTap={{
@@ -49,7 +45,7 @@ const Contact = () => {
                 }}
                 className="bg-lightblue dark:bg-blue px-28 md:px-36 py-2 md:py-3 mt-20 rounded-lg md:text-lg text-sm text-blue dark:text-white font-medium capitalize focus:outline-none"
               >
-                {content.resume.btn}
+                {resume.btn}
               </motion.button>
             </a>
           </div>

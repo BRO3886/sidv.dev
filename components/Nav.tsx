@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { useContext } from 'react';
 import Link from 'next/link';
-import content from '../lib/content';
+import { nav } from '../lib/content';
 import ThemeContext from '../theme/ThemeContext';
 
 type Props = {
@@ -15,7 +15,7 @@ const Nav = (props: Props) => {
       <div className="flex flex-row">
         <Link href="/" passHref>
           <h1 className="text-3xl font-bold text-black dark:text-white">
-            {content.nav.logo}
+            {nav.logo}
             <span className="rounded-full bg-blue h-2 w-2 inline-block"></span>
           </h1>
         </Link>
@@ -86,7 +86,7 @@ const Nav = (props: Props) => {
         <nav>
           <ul className="lg:flex-1 items-center justify-between pt-4 lg:pt-0">
             <li>
-              {content.nav.links.map((link, index) => {
+              {nav.links.map((link, index) => {
                 return (
                   <Link href={link.to} key={index} passHref>
                     <a

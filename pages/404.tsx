@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Header from '../components/Header';
-import content from '../lib/content';
+import { nav } from '../lib/content';
 
 const NotFound = () => {
   return (
@@ -12,7 +12,7 @@ const NotFound = () => {
           <div className="items-center justify-center text-center">
             <div className="mx-auto flex flex-col">
               <h1 className="text-3xl font-bold text-black dark:text-white">
-                {content.nav.logo}
+                {nav.logo}
                 <span className="rounded-full bg-blue h-2 w-2 inline-block"></span>
               </h1>
               <h1 className="md:text-4xl text-lg font-bold text-blue">404</h1>

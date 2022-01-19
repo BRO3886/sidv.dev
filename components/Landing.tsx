@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import ThemeContext from '../theme/ThemeContext';
-import content from '../lib/content';
+import { landing } from '../lib/content';
 
 const Landing = () => {
   const { _, toggleDark } = useContext(ThemeContext);
@@ -18,18 +18,18 @@ const Landing = () => {
           >
             <img
               className="rounded-full"
-              src={content.landing.img.url}
-              alt={content.landing.img.alt}
+              src={landing.img.url}
+              alt={landing.img.alt}
             />
           </motion.button>
         </div>
         <div className="text-black dark:text-white text-center md:text-left">
           <h2 className="transition-all duration-200 text-3xl md:text-5xl lg:text-6xl font-bold">
-            {content.landing.text[0]}
+            {landing.text[0]}
             <br />
-            {content.landing.text[1]}{' '}
+            {landing.text[1]}{' '}
             <span className="text-black dark:text-white transition-all duration-200">
-              {content.landing.text[2]}
+              {landing.text[2]}
             </span>
           </h2>
           <Link href="/contact" passHref>
@@ -43,7 +43,7 @@ const Landing = () => {
               transition={{ type: 'spring', duration: 0.2 }}
               className="bg-lightblue dark:bg-blue px-10 py-3 md:px-24 lg:px-36 mt-10 rounded-lg text-blue dark:text-white font-medium capitalize focus:outline-none transition-all duration-150"
             >
-              {content.landing.btnText.toUpperCase()}
+              {landing.btnText.toUpperCase()}
             </motion.button>
           </Link>
         </div>
