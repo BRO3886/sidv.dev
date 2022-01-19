@@ -12,7 +12,7 @@ const Contact = () => {
       <Header title="Get in touch" />
       <Nav name="contact" />
       <div className="flex flex-col min-h-screen">
-        <h2 className="w-10/12 md:w-9/12 lg:w-8/12 mx-auto text-3xl md:text-5xl font-bold pt-60  md:pt-36 dark:text-white">
+        <h2 className="w-10/12 md:w-9/12 lg:w-8/12 mx-auto text-3xl md:text-5xl font-bold pt-36 dark:text-white">
           Get in Touch
         </h2>
         <div className="w-10/12 md:w-9/12 lg:w-8/12  mx-auto flex flex-col justify-center">
@@ -29,7 +29,7 @@ const Contact = () => {
           <div className="text-darkgrey dark:text-grey font-semibold mb-4 md:text-xl">
             {'SOCIAL'}
           </div>
-          <div className="">
+          <div className="grid grid-cols-4 sm:flex sm:flex-row">
             {contactInfo.social.map((item, index) => {
               return <ContactLink key={index} data={item} />;
             })}
@@ -43,7 +43,7 @@ const Contact = () => {
                   backgroundColor: '#2B8BFC',
                   color: '#FFFFFF',
                 }}
-                className="bg-lightblue dark:bg-blue px-28 md:px-36 py-2 md:py-3 mt-20 rounded-lg md:text-lg text-sm text-blue dark:text-white font-medium capitalize focus:outline-none"
+                className="bg-lightblue dark:bg-blue px-28 md:px-36 py-2 md:py-3 my-20 rounded-lg md:text-lg text-sm text-blue dark:text-white font-medium capitalize focus:outline-none"
               >
                 {resume.btn}
               </motion.button>
