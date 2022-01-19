@@ -25,6 +25,7 @@ const Header = (props) => {
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:site" content="https://sidv.dev" />
       <meta name="twitter:creator" content="@sidv_22" />
+      <meta name="twitter:image" content="/assets/pp.webp" />
       <meta
         name="google-site-verification"
         content="6zN_DV-uihM3ghNKdbtKIDTZXlcdQv9WFH5BHz8wnyE"
