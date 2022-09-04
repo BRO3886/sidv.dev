@@ -26,11 +26,11 @@ export const landing = {
 };
 
 export const about = [
-  "A Fullstack Developer based in Delhi, India. Currently an Intern at Groww, India. I'm pursuing BTech in Computer Science from VIT-Vellore.",
+  'A Fullstack Developer based in Delhi, India. Currently an SDE at Zomato.',
   '',
-  "I have hands on experience with various languages and frameworks. I've worked with Flutter and Go. I've made projects with React, Node. Delved a bit into native android dev with Kotlin and Jetpack Compose.",
+  "I have hands on experience with various languages and frameworks. I've worked with Flutter and Go. I've made projects with React, Express.",
   '',
-  'I love open source. I try to contribute to open source projects (which I like or use) from time to time. Trying to get better at contributing.',
+  'I love open source. I try to contribute to open source projects from time to time. Trying to get better at contributing.',
   '',
   'I also have some interest in design. I love to design UIs, social media posters for my projects on my own. In fact, I designed this website too!',
 ];
@@ -170,6 +170,18 @@ export const projectsInfo = [
 
 export const workInfo = [
   {
+    title: 'Zomato',
+    url: 'https://zomato.com',
+    img: 'assets/work/zomato.webp',
+    imgDark: 'assets/work/zomato-dark.webp',
+    duration: 'Jul 2022 - Present',
+    role: 'Software Development Engineer - 1',
+    about: [
+      'Zomato is a restaurant aggregator platform in India',
+      'Working on Search tech at Zomato as a backend developer',
+    ],
+  },
+  {
     title: 'Groww',
     url: 'https://groww.in',
     img: 'assets/work/groww.webp',
@@ -177,7 +189,7 @@ export const workInfo = [
     duration: 'Jan 2022 - Present',
     role: 'Software Engineering Intern',
     about: [
-      'Groww is an investing platform where users can find the best stocks and MFs, and invest their money hassle free. It is democratising finance in India.',
+      'Groww is an investing platform based in India. ',
       'Currently working on the core platform services as a backend developer.',
     ],
   },

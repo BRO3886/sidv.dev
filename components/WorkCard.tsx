@@ -36,7 +36,7 @@ const WorkCard = (props: Props) => {
             <img
               src={dark ? props.work.imgDark : props.work.img}
               alt={props.work.url}
-              className="h-full w-3/12 rounded-l-xl hidden md:block"
+              className="h-full w-2/12 rounded-l-xl hidden md:block"
             />
             <div className="flex flex-col p-6">
               <h2 className="text-2xl sm:text-2xl md:text-xl lg:text-3xl font-bold">
@@ -51,7 +51,7 @@ const WorkCard = (props: Props) => {
               <ul className="list-disc ml-5">
                 {props.work.about.map((line, index) => {
                   return (
-                    <li className="text-xl" key={index}>
+                    <li className="text-base" key={index}>
                       {line}
                     </li>
                   );

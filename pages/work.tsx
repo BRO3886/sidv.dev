@@ -15,7 +15,7 @@ const work = () => {
           Work Experience
         </h2>
         <div style={{ height: '3vh' }}></div>
-        <div className="grid grid-cols-1 gap-8">
+        <div className="grid grid-cols-1 gap-2">
           {workInfo.map((work, index) => {
             return <WorkCard work={work} key={index} />;
           })}
