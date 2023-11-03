@@ -1,7 +1,7 @@
 export const redirects = {
   resume: {
     title: 'Resume',
-    url: 'https://drive.google.com/file/d/1zXehK6K_WRQre3WosyM3613wuVHRV-iW/view',
+    url: 'https://drive.google.com/file/d/12GXqI4mhd40C2CyFxgNXsb32WdJiKdal/view?usp=drive_link',
   },
   twt: {
     title: 'Twitter',
