@@ -1,11 +1,11 @@
 export const redirects = {
   resume: {
     title: 'Resume',
-    url: 'https://drive.google.com/file/d/12GXqI4mhd40C2CyFxgNXsb32WdJiKdal/view?usp=drive_link',
+    url: 'https://drive.google.com/file/d/1hMrzJRUt4EvzKh5d9ldJQOsS-UVT1tq5/view',
   },
   twt: {
     title: 'Twitter',
-    url: 'https://twitter.com/sidv_22',
+    url: 'https://twitter.com/sidposting',
   },
   insta: {
     title: 'Instagram',
@@ -46,5 +46,9 @@ export const redirects = {
   'akina': {
     title: 'Akina Video',
     url: 'https://www.youtube.com/watch?t=7814&v=Efwa0lTJLsc',
-  }
+  },
+  peerlist: {
+    title: 'Peerlist',
+    url: 'https://peerlist.io/siddhartha',
+  },
 };
