@@ -43,7 +43,7 @@ export const redirects = {
     title: 'gtasks - Privacy Policy',
     url: 'https://docs.google.com/document/d/e/2PACX-1vSWlBMvUV_Rv90XcYjIOianbigQOakTizgC6YV8iZhbTZRk5tc3oMnTuV-tiGr9g8YAnaR9c5BOzi4Z/pub',
   },
-  'akina': {
+  akina: {
     title: 'Akina Video',
     url: 'https://www.youtube.com/watch?t=7814&v=Efwa0lTJLsc',
   },

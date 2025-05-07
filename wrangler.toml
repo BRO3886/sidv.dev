@@ -1,3 +1,5 @@
+compatibility_date = "2021-09-14"
+
 name = "site-worker"
 type = "webpack"
 workers_dev = false
@@ -10,3 +12,4 @@ entry-point = "workers-site"
 name = "site-worker-production"
 route = "sidv.dev/*"
 vars = { BASE_URL = "https://sidv.dev/" } 
+
