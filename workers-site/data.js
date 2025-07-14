@@ -51,4 +51,8 @@ export const redirects = {
     title: 'Peerlist',
     url: 'https://peerlist.io/siddhartha',
   },
+  'go-green-tea-gc': {
+    title: 'Go Green Tea GC',
+    url: 'https://open.substack.com/pub/sidposting/p/green-tea-gc-how-go-just-cut-memory?r=9kguj&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false',
+  },
 };
